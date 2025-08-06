@@ -11,6 +11,9 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "SUS UBC Shop",
   description: "UBC Science Undergraduate Society Merch Shop",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
