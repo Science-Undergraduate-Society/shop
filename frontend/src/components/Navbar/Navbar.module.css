@@ -24,8 +24,26 @@
     }
 }
 
-.backLink:hover {
-    color: #ccc;
+
+.backlinkButton {
+    background: linear-gradient(135deg, #222755, #0173BE);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    display: block;
+    font-family: Figtree, sans-serif;
+}
+
+.backlinkButton:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .logo {

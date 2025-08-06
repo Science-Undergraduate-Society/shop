@@ -9,7 +9,7 @@ export const Navbar = () => {
                 src="/white-logo.png"
             />
             
-            <a href="https://www.susubc.ca/" className={styles.backLink}>SUS Home Page</a>
+            <a href="https://www.susubc.ca/" className={styles.backlinkButton}>SUS Home Page</a>
         </nav>
     )
 }

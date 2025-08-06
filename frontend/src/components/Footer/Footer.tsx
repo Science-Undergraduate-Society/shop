@@ -3,7 +3,6 @@ import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faEnvelope,
-    faPlayCircle, // for YouTube
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faFacebook,
