@@ -1,0 +1,64 @@
+.confirmation {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #222755, #0173BE);
+    padding: 40px 20px;
+    font-family: Figtree, sans-serif;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    color: #222755;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.card p {
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.card span {
+    font-weight: 600;
+    color: #0173BE;
+}
+
+.homeButton {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #222755, #0173BE);
+    border: none;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.homeButton:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.note {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 24px;
+}

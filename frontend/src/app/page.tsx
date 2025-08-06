@@ -21,7 +21,7 @@ export default function Home() {
 
           <section>
             <p className={styles.pickupInfo}>
-              📦 <strong>IMPORTANT - Pickup Information:</strong> All orders must be picked up on <span>August 11 between 11:00 AM – 1:00 PM</span> or on <span>Imagine Day – September 2, 2025</span>. Please bring your Square confirmation email when picking up your order!
+              📦 <strong>IMPORTANT - Pickup Information:</strong> All summer 2025 orders must be picked up at Abdul Ladha Science Student Centre, Vancouver, BC V6T 1Z1 on <span>August 11 between 11:00 AM – 1:00 PM</span> or on <span>Imagine Day – September 2, 2025</span>. Please bring your Square confirmation email when picking up your order!
             </p>
           </section>
 
