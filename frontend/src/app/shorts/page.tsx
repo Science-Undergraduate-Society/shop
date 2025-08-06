@@ -9,7 +9,7 @@ import { Footer } from "@/components/Footer/Footer";
 export default function Shorts() {
     const shorts = {
         name: "Shorts",
-        price: 55,
+        price: 45,
         colors: ["Grey"],
         sizes: { S: 100, M: 100, L: 100, XL: 100 },
         images: [
