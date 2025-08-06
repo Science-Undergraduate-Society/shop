@@ -17,8 +17,7 @@ export default function Crewneck() {
             "/merch_photos/crewnecks/black-crew.png",
             "/merch_photos/crewnecks/blue-crew.png",
             "/merch_photos/crewnecks/pink-crew.jpg",
-            "/merch_photos/crewnecks/sand-crew.png",
-            "/merch_photos/crewnecks/white-crew.png",
+            "/merch_photos/crewnecks/sand-crew.png"
         ],
         squareLink: "https://square.link/u/bh22jGInw",
     };
