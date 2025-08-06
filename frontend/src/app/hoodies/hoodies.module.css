@@ -1,0 +1,107 @@
+.pageLayout {
+  padding: 40px 60px;
+  font-family: Figtree, sans-serif;
+}
+
+.backLink {
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  color: #222755;
+}
+
+.content {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.leftPanel {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  min-width: 400px;
+}
+
+.thumbnailColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  border: 2px solid #0173BE;
+}
+
+.mainImage img {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rightPanel {
+  flex: 1;
+  min-width: 300px;
+}
+
+.name {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  color: #0173BE;
+  margin-bottom: 20px;
+}
+
+.textGroup {
+  margin-bottom: 20px;
+}
+
+.textGroup ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.buyBtn {
+  background-color: #222755;
+  color: white;
+  font-size: 20px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: background 0.2s;
+}
+
+.buyBtn:hover {
+  background-color: #0173BE;
+}
+
+.taxes {
+  font-size: 16px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 20px;
+  max-width: 600px;
+}

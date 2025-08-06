@@ -1,5 +1,3 @@
-export type Price = "hoodie" | "crewneck" | "shorts";
-
 export interface Variant {
     color: string;
     quantities: Record<string, number>;
@@ -7,8 +5,8 @@ export interface Variant {
 
 export interface Product {
     name: string;
-    type: Price;
     cost: number;
+    slug: string;
     image: string;
     variants: Variant[];
     squareLinks: Record<string, string>; // key: "S-Grey", value: Square link
