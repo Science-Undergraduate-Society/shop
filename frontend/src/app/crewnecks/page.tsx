@@ -19,7 +19,7 @@ export default function Crewneck() {
             "/merch_photos/crewnecks/pink-crew.jpg",
             "/merch_photos/crewnecks/sand-crew.png"
         ],
-        squareLink: "https://square.link/u/bh22jGInw",
+        squareLink: "https://square.link/u/bh22jGIn",
     };
 
     const [selectedImage, setSelectedImage] = useState(crewneck.images[0]);
