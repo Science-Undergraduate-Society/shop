@@ -21,7 +21,10 @@ export default function Home() {
 
           <section>
             <p className={styles.pickupInfo}>
-              📦 <strong>IMPORTANT - Pickup Information:</strong> All summer 2025 orders must be picked up at Abdul Ladha Science Student Centre, Vancouver, BC V6T 1Z1 on <span>August 11 between 11:00 AM – 1:00 PM</span> or on <span>Imagine Day – September 2, 2025</span>. Please bring your Square confirmation email when picking up your order!
+              📦 <p><strong>IMPORTANT - Pickup Information:</strong></p>
+                <p>
+                  Summer orders are now closed! Until further notice, please contact our sales team at <a href="mailto:sales@sus.ubc.ca">sales@sus.ubc.ca</a> to place an order.
+                </p>
             </p>
           </section>
 
@@ -29,21 +32,21 @@ export default function Home() {
             <Link href="/hoodies">
               <div className={styles.categoryCard}>
                 <img src="/merch_photos/hoodies/hoodie-banner.png" alt="Hoodies" />
-                <h2>Shop Hoodies</h2>
+                <h2>View Hoodies</h2>
               </div>
             </Link>
 
             <Link href="/crewnecks">
               <div className={styles.categoryCard}>
                 <img src="/merch_photos/crewnecks/crew-banner.png" alt="Crewnecks" />
-                <h2>Shop Crewnecks</h2>
+                <h2>View Crewnecks</h2>
               </div>
             </Link>
 
             <Link href="/shorts">
               <div className={styles.categoryCard}>
                 <img src="/merch_photos/shorts/shorts-banner.png" alt="Shorts" />
-                <h2>Shop Shorts</h2>
+                <h2>View Shorts</h2>
               </div>
             </Link>
 

@@ -27,58 +27,58 @@ export default function Hoodie() {
 
     return (
         <div className={styles.pageWrapper}>
-        <nav className={styles.navbar}>
-            <Link href="/" className={styles.backLink}>← Back to Shop</Link>
-        </nav>
+            <nav className={styles.navbar}>
+                <Link href="/" className={styles.backLink}>← Back to Shop</Link>
+            </nav>
 
-        <div className={styles.pageLayout}>
-            <div className={styles.content}>
-            {/* Left Panel: Thumbnails + Main Image */}
-            <div className={styles.leftPanel}>
-                <div className={styles.thumbnailColumn}>
-                    {hoodie.images.map((src, index) => (
-                        <img
-                        key={index}
-                        src={src}
-                        alt={`Hoodie ${index}`}
-                        className={`${styles.thumbnail} ${selectedImage === src ? styles.active : ""}`}
-                        onClick={() => setSelectedImage(src)}
-                        />
-                    ))}
-                </div>
-                    <div className={styles.mainImage}>
-                    <img src={selectedImage} alt="Main Hoodie" />
-                </div>
-            </div>
-
-            {/* Right Panel: Info */}
-            <div className={styles.rightPanel}>
-                <h1 className={styles.name}>{hoodie.name}</h1>
-                <p className={styles.price}>${hoodie.price}.00 CAD</p>
-
-                <div className={styles.textGroup}>
-                    <h2>Available Sizes:</h2>
-                    <ul>
-                        {Object.entries(hoodie.sizes).map(([size, qty]) => (
-                        <li key={size}>
-                            {size} — {qty > 0 ? "In Stock" : "Sold Out"}
-                        </li>
+            <div className={styles.pageLayout}>
+                <div className={styles.content}>
+                {/* Left Panel: Thumbnails + Main Image */}
+                <div className={styles.leftPanel}>
+                    <div className={styles.thumbnailColumn}>
+                        {hoodie.images.map((src, index) => (
+                            <img
+                            key={index}
+                            src={src}
+                            alt={`Hoodie ${index}`}
+                            className={`${styles.thumbnail} ${selectedImage === src ? styles.active : ""}`}
+                            onClick={() => setSelectedImage(src)}
+                            />
                         ))}
-                    </ul>
+                    </div>
+                        <div className={styles.mainImage}>
+                        <img src={selectedImage} alt="Main Hoodie" />
+                    </div>
+                </div>
+
+                {/* Right Panel: Info */}
+                <div className={styles.rightPanel}>
+                    <h1 className={styles.name}>{hoodie.name}</h1>
+                    <p className={styles.price}>${hoodie.price}.00 CAD</p>
+
+                    <div className={styles.textGroup}>
+                        <h2>Available Sizes:</h2>
+                        <ul>
+                            {Object.entries(hoodie.sizes).map(([size, qty]) => (
+                            <li key={size}>
+                                {size} — {qty > 0 ? "In Stock" : "Sold Out"}
+                            </li>
+                            ))}
+                        </ul>
                     </div>
 
                     <div className={styles.textGroup}>
-                    <h2>Available Colors:</h2>
-                    <ul>
-                        {hoodie.colors.map((color) => (
-                        <li key={color}>{color}</li>
-                        ))}
-                    </ul>
+                        <h2>Available Colors:</h2>
+                        <ul>
+                            {hoodie.colors.map((color) => (
+                            <li key={color}>{color}</li>
+                            ))}
+                        </ul>
                     </div>
-
-                    <a href={hoodie.squareLink} target="_blank" rel="noopener noreferrer">
+                        
+                    {/*<a href={hoodie.squareLink} target="_blank" rel="noopener noreferrer">
                     <button className={styles.buyBtn}>Buy Now</button>
-                    </a>
+                    </a> */}
 
                     <p className={styles.taxes}>✅ Taxes Included</p>
                 </div>

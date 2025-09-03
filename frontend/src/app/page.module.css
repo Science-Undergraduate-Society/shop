@@ -11,7 +11,6 @@
     filter: brightness(0.9);
 }
 
-
 .heroText {
     position: absolute;
     top: 50%;
@@ -78,6 +77,10 @@
     color: #0173BE;
 }
 
+.pickupInfo a {
+    text-decoration: underline;
+    color: darkblue;
+}
 
 /* GRID */
 
