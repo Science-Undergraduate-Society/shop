@@ -21,14 +21,26 @@ export default function Home() {
 
           <section>
             <p className={styles.pickupInfo}>
-              📦 <p><strong>IMPORTANT - Pickup Information:</strong></p>
-                <p>
-                  Summer orders are now closed! Until further notice, please contact our sales team at <a href="mailto:sales@sus.ubc.ca">sales@sus.ubc.ca</a> to place an order.
-                </p>
+              📦 <strong>IMPORTANT - Pickup Information: </strong>
+                Summer orders are now closed! Until further notice, please contact our sales team at <a href="mailto:sales@sus.ubc.ca">sales@sus.ubc.ca</a> to place an order.
             </p>
           </section>
 
           <section className={styles.categories}>
+            <Link href="/letterman">
+              <div className={styles.categoryCard}>
+                <img src="/merch_photos/letterman/letterman-banner.png" alt="Letterman" />
+                <h2>View Letterman Jackets</h2>
+              </div>
+            </Link>
+
+            <Link href="/quarterZips">
+              <div className={styles.categoryCard}>
+                <img src="/merch_photos/quarter_zips/quarter-banner.png" alt="Quarter Zips" />
+                <h2>View Quarter-Zips</h2>
+              </div>
+            </Link>
+
             <Link href="/hoodies">
               <div className={styles.categoryCard}>
                 <img src="/merch_photos/hoodies/hoodie-banner.png" alt="Hoodies" />

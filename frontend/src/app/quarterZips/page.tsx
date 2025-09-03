@@ -2,27 +2,25 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import styles from "./crewnecks.module.css";
+import styles from "./quarterZips.module.css";
 
 import { Footer } from "@/components/Footer/Footer";
 
-export default function Crewneck() {
-    const crewneck = {
-        name: "Classic Science UBC Crewnecks",
-        price: 55,
-        colors: ["Grey", "White", "Sand", "Black", "Light Blue", "Retro Blue", "Pink"],
-        sizes: { S: 100, M: 100, L: 100, XL: 100 },
+export default function QuarterZips() {
+    const quarterzip = {
+        name: "Our Brand New Quarter Zips!",
+        price: 50,
+        colors: ["Navy Blue"],
+        sizes: { S: 0, M: 0, L: 10, XL: 5 },
         images: [
-            "/merch_photos/crewnecks/grey-crew.png",
-            "/merch_photos/crewnecks/black-crew.png",
-            "/merch_photos/crewnecks/blue-crew.png",
-            "/merch_photos/crewnecks/pink-crew.jpg",
-            "/merch_photos/crewnecks/sand-crew.png"
+            "/merch_photos/quarter_zips/quarter1.JPG",
+            "/merch_photos/quarter_zips/quarter2.JPG",
+            "/merch_photos/quarter_zips/quarter3.JPG",
         ],
-        squareLink: "https://square.link/u/bh22jGIn",
+        squareLink: "",
     };
 
-    const [selectedImage, setSelectedImage] = useState(crewneck.images[0]);
+    const [selectedImage, setSelectedImage] = useState(quarterzip.images[0]);
 
     return (
             <div className={styles.pageWrapper}>
@@ -35,30 +33,30 @@ export default function Crewneck() {
                 {/* Left Panel: Thumbnails + Main Image */}
                 <div className={styles.leftPanel}>
                     <div className={styles.thumbnailColumn}>
-                        {crewneck.images.map((src, index) => (
+                        {quarterzip.images.map((src, index) => (
                             <img
                             key={index}
                             src={src}
-                            alt={`crewneck ${index}`}
+                            alt={`quarterzip ${index}`}
                             className={`${styles.thumbnail} ${selectedImage === src ? styles.active : ""}`}
                             onClick={() => setSelectedImage(src)}
                             />
                         ))}
                     </div>
                         <div className={styles.mainImage}>
-                        <img src={selectedImage} alt="Main Crewneck" />
+                        <img src={selectedImage} alt="Main Quarter-Zip" />
                     </div>
                 </div>
 
                 {/* Right Panel: Info */}
                 <div className={styles.rightPanel}>
-                    <h1 className={styles.name}>{crewneck.name}</h1>
-                    <p className={styles.price}>${crewneck.price}.00 CAD</p>
+                    <h1 className={styles.name}>{quarterzip.name}</h1>
+                    <p className={styles.price}>${quarterzip.price}.00 CAD</p>
 
                     <div className={styles.textGroup}>
                         <h2>Available Sizes:</h2>
                             <ul>
-                                {Object.entries(crewneck.sizes).map(([size, qty]) => (
+                                {Object.entries(quarterzip.sizes).map(([size, qty]) => (
                                 <li key={size}>
                                     {size} — {qty > 0 ? "In Stock" : "Sold Out"}
                                 </li>
@@ -69,7 +67,7 @@ export default function Crewneck() {
                         <div className={styles.textGroup}>
                             <h2>Available Colors:</h2>
                             <ul>
-                                {crewneck.colors.map((color) => (
+                                {quarterzip.colors.map((color) => (
                                 <li key={color}>{color}</li>
                                 ))}
                             </ul>
