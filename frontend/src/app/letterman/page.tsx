@@ -80,6 +80,9 @@ export default function QuarterZips() {
                         </a> */}
 
                         <p className={styles.taxes}>✅ Taxes Included</p>
+
+                        <br/>
+                        <p><strong>Note:</strong> This year only, jackets are $80. Starting next year, the price will be $100.</p>
                     </div>
                 </div>
             </div>
