@@ -9,7 +9,7 @@ import { Footer } from "@/components/Footer/Footer";
 export default function QuarterZips() {
     const letterman = {
         name: "Our Brand New Letterman Jackets!",
-        price: 50,
+        price: 80,
         colors: ["Navy Blue"],
         sizes: { S: 3, M: 18, L: 25, XL: 7 },
         images: [
