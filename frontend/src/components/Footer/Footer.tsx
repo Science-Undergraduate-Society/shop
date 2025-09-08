@@ -19,7 +19,7 @@ export const Footer = () => {
             name: "Email",
             icon: faEnvelope,
             extra: styles.iconEmail,
-            link: "mailto:<EMAIL>",
+            link: "mailto:<sales@sus.ubc.ca>",
         },
         {
             name: "Facebook",
