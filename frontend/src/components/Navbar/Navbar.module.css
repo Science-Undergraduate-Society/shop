@@ -4,50 +4,47 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: #F5F5F5;
     padding: 20px 40px;
     top: 0;
     width: 100%;
     z-index: 1;
 }
 
-.backLink {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-
-    &:hover {
-        color: #ADD8E6;
-    }
-}
-
-
 .backlinkButton {
-    background: linear-gradient(135deg, #222755, #0173BE);
-    color: white;
-    font-size: 24px;
+    background: none;
+    color: #222755;
+    font-size: 16px;
     font-weight: 600;
-    padding: 16px 40px;
-    border: none;
+    padding: 8px 16px;
+    border: 1px solid black;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     display: block;
     font-family: Figtree, sans-serif;
 }
 
 .backlinkButton:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.1);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-    width: 100px;
+    width: 160px;
     height: auto;
     cursor: pointer;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.linkContainer {
+    a:hover {
+        color: #4f58a9;
+    }
 }
