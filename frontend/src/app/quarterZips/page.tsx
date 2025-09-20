@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./quarterZips.module.css";
 
 import { Footer } from "@/components/Footer/Footer";
+import { Notice } from "@/components/Notice/Notice";
 
 export default function QuarterZips() {
     const quarterzip = {
@@ -27,6 +28,8 @@ export default function QuarterZips() {
             <nav className={styles.navbar}>
                 <Link href="/" className={styles.backLink}>← Back to Shop</Link>
             </nav>
+
+            <Notice />
 
             <div className={styles.pageLayout}>
                 <div className={styles.content}>

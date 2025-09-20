@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./letterman.module.css";
 
 import { Footer } from "@/components/Footer/Footer";
+import { Notice } from "@/components/Notice/Notice";
 
 export default function QuarterZips() {
     const letterman = {
@@ -25,10 +26,12 @@ export default function QuarterZips() {
     const [selectedImage, setSelectedImage] = useState(letterman.images[0]);
 
     return (
-            <div className={styles.pageWrapper}>
+        <div className={styles.pageWrapper}>
             <nav className={styles.navbar}>
                 <Link href="/" className={styles.backLink}>← Back to Shop</Link>
             </nav>
+
+            <Notice />
 
             <div className={styles.pageLayout}>
                 <div className={styles.content}>

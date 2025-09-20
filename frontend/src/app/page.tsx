@@ -4,6 +4,7 @@ import Link from 'next/link';
 // COMPONENTS
 import { Footer } from "@/components/Footer/Footer";
 import { Navbar } from '@/components/Navbar/Navbar';
+import { Notice } from '@/components/Notice/Notice';
 
 export default function Home() {
   return (
@@ -19,12 +20,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section>
-            <p className={styles.pickupInfo}>
-              📦 <strong>IMPORTANT - Pickup Information: </strong>
-                Summer orders are now closed! Until further notice, please contact our sales team at <a href="mailto:sales@sus.ubc.ca">sales@sus.ubc.ca</a> to place an order.
-            </p>
-          </section>
+          <Notice />
 
           <section className={styles.categories}>
             <Link href="/letterman">

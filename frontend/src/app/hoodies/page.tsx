@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./hoodies.module.css";
 
 import { Footer } from "@/components/Footer/Footer";
+import { Notice } from "@/components/Notice/Notice";
 
 export default function Hoodie() {
     const hoodie = {
@@ -30,6 +31,8 @@ export default function Hoodie() {
             <nav className={styles.navbar}>
                 <Link href="/" className={styles.backLink}>← Back to Shop</Link>
             </nav>
+            
+            <Notice />
 
             <div className={styles.pageLayout}>
                 <div className={styles.content}>

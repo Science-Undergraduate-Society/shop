@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./shorts.module.css";
 
 import { Footer } from "@/components/Footer/Footer";
+import { Notice } from "@/components/Notice/Notice";
 
 export default function Shorts() {
     const shorts = {
@@ -28,6 +29,8 @@ export default function Shorts() {
             <nav className={styles.navbar}>
                 <Link href="/" className={styles.backLink}>← Back to Shop</Link>
             </nav>
+
+            <Notice />
 
             <div className={styles.pageLayout}>
                 <div className={styles.content}>
