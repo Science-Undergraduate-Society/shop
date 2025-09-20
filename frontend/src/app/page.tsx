@@ -1,5 +1,6 @@
 import styles from './page.module.css'
 import Link from 'next/link';
+import clothes from "../data/products.json"
 
 // COMPONENTS
 import { Footer } from "@/components/Footer/Footer";
@@ -22,43 +23,22 @@ export default function Home() {
 
           <Notice />
 
-          <section className={styles.categories}>
-            <Link href="/letterman">
-              <div className={styles.categoryCard}>
-                <img src="/merch_photos/letterman/letterman-banner.png" alt="Letterman" />
-                <h2>View Letterman Jackets</h2>
-              </div>
-            </Link>
-
-            <Link href="/quarterZips">
-              <div className={styles.categoryCard}>
-                <img src="/merch_photos/quarter_zips/quarter-banner.png" alt="Quarter Zips" />
-                <h2>View Quarter-Zips</h2>
-              </div>
-            </Link>
-
-            <Link href="/hoodies">
-              <div className={styles.categoryCard}>
-                <img src="/merch_photos/hoodies/hoodie-banner.png" alt="Hoodies" />
-                <h2>View Hoodies</h2>
-              </div>
-            </Link>
-
-            <Link href="/crewnecks">
-              <div className={styles.categoryCard}>
-                <img src="/merch_photos/crewnecks/crew-banner.png" alt="Crewnecks" />
-                <h2>View Crewnecks</h2>
-              </div>
-            </Link>
-
-            <Link href="/shorts">
-              <div className={styles.categoryCard}>
-                <img src="/merch_photos/shorts/shorts-banner.png" alt="Shorts" />
-                <h2>View Shorts</h2>
-              </div>
-            </Link>
-
+          <section className={styles.categoriesGrid}>
+            {clothes.map((item) => (
+              <Link key={item.id} href={item.link}>
+                <div className={styles.categoryCard}>
+                  <div className={styles.imageWrapper}>
+                    <img src={item.image} alt={item.name} />
+                  </div>
+                  <div className={styles.info}>
+                    <h2>{item.name}</h2>
+                    <p className={styles.price}>${item.price.toFixed(2)}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </section>
+
         </div>
       </main>
 

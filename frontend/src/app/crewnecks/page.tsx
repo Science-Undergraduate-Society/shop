@@ -10,7 +10,7 @@ import { Notice } from "@/components/Notice/Notice";
 export default function Crewneck() {
     const crewneck = {
         name: "Classic Science UBC Crewnecks",
-        price: 55,
+        price: 45,
         colors: ["Grey", "White", "Sand", "Black", "Light Blue", "Retro Blue", "Pink"],
         sizes: { S: 100, M: 100, L: 100, XL: 100 },
         images: [

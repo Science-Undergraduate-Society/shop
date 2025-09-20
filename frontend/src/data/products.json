@@ -1,0 +1,37 @@
+[
+    {
+        "id": "letterman",
+        "name": "Letterman Jackets",
+        "price": 80,
+        "image": "/merch_photos/letterman/letterman4.JPG",
+        "link": "/letterman"
+    },
+    {
+        "id": "hoodies",
+        "name": "Hoodies",
+        "price": 55,
+        "image": "/merch_photos/hoodies/hoodie-grey-spotlight.jpeg",
+        "link": "/hoodies"
+    },
+    {
+        "id": "shorts",
+        "name": "Shorts",
+        "price": 45,
+        "image": "/merch_photos/shorts/shorts-grass.jpeg",
+        "link": "/shorts"
+    },
+    {
+        "id": "crewnecks",
+        "name": "Crewnecks",
+        "price": 45,
+        "image": "/merch_photos/crewnecks/pink-crew.jpg",
+        "link": "/crewnecks"
+    },
+    {
+        "id": "quarterZips",
+        "name": "Quarter-Zips",
+        "price": 50,
+        "image": "/merch_photos/quarter_zips/quarter2.JPG",
+        "link": "/quarterZips"
+    }
+]
