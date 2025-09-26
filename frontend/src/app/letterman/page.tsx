@@ -12,7 +12,7 @@ export default function QuarterZips() {
         name: "Our Brand New Letterman Jackets!",
         price: 80,
         colors: ["Navy Blue"],
-        sizes: { S: 3, M: 18, L: 25, XL: 7 },
+        sizes: { S: 0, M: 18, L: 25, XL: 7 },
         images: [
             "/merch_photos/letterman/letterman1.JPG",
             "/merch_photos/letterman/letterman2.JPG",
