@@ -1,4 +1,4 @@
-# 🛍️ shop.susubc.ca 
+# 🛍️ shop.susubc.ca  
  
 Welcome to the **SUS UBC Online Shop**!  
 This site is where students can browse and purchase official SUS merchandise like hoodies, crewnecks, jackets, patches, and more.  
