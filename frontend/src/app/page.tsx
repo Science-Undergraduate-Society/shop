@@ -1,6 +1,6 @@
 import styles from './page.module.css'
 import Link from 'next/link';
-import clothes from "../data/products.json"
+import products from "../data/products.json"
 
 // COMPONENTS
 import { Footer } from "@/components/Footer/Footer";
@@ -23,20 +23,39 @@ export default function Home() {
 
           <Notice />
 
-          <section className={styles.categoriesGrid}>
-            {clothes.map((item) => (
-              <Link key={item.id} href={item.link}>
-                <div className={styles.categoryCard}>
-                  <div className={styles.imageWrapper}>
-                    <img src={item.image} alt={item.name} />
-                  </div>
-                  <div className={styles.info}>
-                    <h2>{item.name}</h2>
-                    <p className={styles.price}>${item.price.toFixed(2)}</p>
-                  </div>
-                </div>
-              </Link>
-            ))}
+          <section className={styles.merchSection}>
+            <h2 className={styles.sectionTitle}>All Merch</h2>
+            
+            <div className={styles.categoriesGrid}>
+              {products.map((item) => {
+                // MERCH CATEGORY CARD
+                const isNew = ['letterman', 'shorts'].includes(item.id);
+                
+                return (
+                  <Link key={item.id} href={`/product/${item.id}`} className={styles.cardLink}>
+                    <div className={styles.categoryCard}>
+                      {isNew && (
+                        <div className={styles.newBadge}>New</div>
+                      )}
+                      <div className={styles.imageWrapper}>
+                        <img src={item.image} alt={item.name} />
+                      </div>
+                      <div className={styles.info}>
+                        <h3>{item.name}</h3>
+                        {item.variants && item.variants.length > 1 && (
+                          <p className={styles.variantCount}>
+                            {item.variants.length} styles
+                          </p>
+                        )}
+                        <p className={styles.price}>
+                          From ${Math.min(...item.variants.map(v => v.price)).toFixed(2)} CAD
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
           </section>
 
         </div>

@@ -2,36 +2,375 @@
     {
         "id": "letterman",
         "name": "Letterman Jackets",
+        "fullName": "Our Brand New Letterman Jackets!",
         "price": 80,
         "image": "/merch_photos/letterman/letterman4.JPG",
-        "link": "/letterman"
+        "images": [
+            "/merch_photos/letterman/letterman1.JPG",
+            "/merch_photos/letterman/letterman2.JPG",
+            "/merch_photos/letterman/letterman3.JPG",
+            "/merch_photos/letterman/letterman4.JPG",
+            "/merch_photos/letterman/letterman5.JPG"
+        ],
+        "priceNote": "This year only, jackets are discounted at $80! Prices will return to $100 in Summer 2026...",
+        "variants": [
+            {
+                "id": "letterman-jacket",
+                "name": "Letterman Jacket",
+                "price": 80,
+                "stock": 30,
+                "squareLink": ""
+            }
+        ]
     },
     {
         "id": "hoodies",
         "name": "Hoodies",
-        "price": 55,
+        "fullName": "Classic Science UBC Hoodie",
+        "price": 40.50,
         "image": "/merch_photos/hoodies/hoodie-grey-spotlight.jpeg",
-        "link": "/hoodies"
-    },
-    {
-        "id": "shorts",
-        "name": "Shorts",
-        "price": 45,
-        "image": "/merch_photos/shorts/shorts-grass.jpeg",
-        "link": "/shorts"
+        "images": [
+            "/merch_photos/hoodies/grey-hoodie.png",
+            "/merch_photos/hoodies/black-hoodie.png",
+            "/merch_photos/hoodies/blue-hoodie.png",
+            "/merch_photos/hoodies/pink-hoodie.jpg",
+            "/merch_photos/hoodies/sand-hoodie.png",
+            "/merch_photos/hoodies/white-hoodie.png"
+        ],
+        "variants": [
+            {
+                "id": "black-hoodie",
+                "name": "Black Hoodie",
+                "price": 40.50,
+                "stock": 15,
+                "squareLink": ""
+            },
+            {
+                "id": "grey-white-hoodie",
+                "name": "Grey/White Hoodie",
+                "price": 40.50,
+                "stock": 1,
+                "squareLink": ""
+            },
+            {
+                "id": "grey-yellow-hoodie",
+                "name": "Grey/Yellow Hoodie",
+                "price": 40.50,
+                "stock": 9,
+                "squareLink": ""
+            },
+            {
+                "id": "light-blue-hoodie",
+                "name": "Light Blue Hoodie",
+                "price": 40.50,
+                "stock": 5,
+                "squareLink": ""
+            },
+            {
+                "id": "pink-hoodie",
+                "name": "Pink Hoodie",
+                "price": 55,
+                "stock": 0,
+                "squareLink": ""
+            },
+            {
+                "id": "retro-blue-hoodie",
+                "name": "Retro Blue Hoodie",
+                "price": 40.50,
+                "stock": 2,
+                "squareLink": ""
+            },
+            {
+                "id": "sand-hoodie",
+                "name": "Sand Hoodie",
+                "price": 40.50,
+                "stock": 2,
+                "squareLink": ""
+            },
+            {
+                "id": "white-hoodie",
+                "name": "White Hoodie",
+                "price": 40.50,
+                "stock": 0,
+                "squareLink": ""
+            }
+        ]
     },
     {
         "id": "crewnecks",
         "name": "Crewnecks",
-        "price": 45,
+        "fullName": "Classic Science UBC Crewnecks",
+        "price": 35.50,
         "image": "/merch_photos/crewnecks/pink-crew.jpg",
-        "link": "/crewnecks"
+        "images": [
+            "/merch_photos/crewnecks/grey-crew.png",
+            "/merch_photos/crewnecks/black-crew.png",
+            "/merch_photos/crewnecks/blue-crew.png",
+            "/merch_photos/crewnecks/pink-crew.jpg",
+            "/merch_photos/crewnecks/sand-crew.png"
+        ],
+        "variants": [
+            {
+                "id": "black-crewneck",
+                "name": "Black Crewneck",
+                "price": 35.50,
+                "stock": 17,
+                "squareLink": ""
+            },
+            {
+                "id": "grey-white-crew",
+                "name": "Grey/White Crew",
+                "price": 35.50,
+                "stock": 2,
+                "squareLink": ""
+            },
+            {
+                "id": "grey-yellow-crew",
+                "name": "Grey/Yellow Crew",
+                "price": 35.50,
+                "stock": 19,
+                "squareLink": ""
+            },
+            {
+                "id": "light-blue-crewneck",
+                "name": "Light Blue Crewneck",
+                "price": 35.50,
+                "stock": 6,
+                "squareLink": ""
+            },
+            {
+                "id": "pink-crewneck",
+                "name": "Pink Crewneck",
+                "price": 45,
+                "stock": 0,
+                "squareLink": ""
+            },
+            {
+                "id": "retro-blue-crewneck",
+                "name": "Retro Blue Crewneck",
+                "price": 35.50,
+                "stock": 3,
+                "squareLink": ""
+            },
+            {
+                "id": "sand-crewneck",
+                "name": "Sand Crewneck",
+                "price": 35.50,
+                "stock": 2,
+                "squareLink": ""
+            },
+            {
+                "id": "white-crewneck",
+                "name": "White Crewneck",
+                "price": 35.50,
+                "stock": 32,
+                "squareLink": ""
+            }
+        ]
     },
     {
         "id": "quarterZips",
         "name": "Quarter-Zips",
+        "fullName": "Our Brand New Quarter Zips!",
         "price": 50,
         "image": "/merch_photos/quarter_zips/quarter2.JPG",
-        "link": "/quarterZips"
+        "images": [
+            "/merch_photos/quarter_zips/quarter1.JPG",
+            "/merch_photos/quarter_zips/quarter2.JPG",
+            "/merch_photos/quarter_zips/quarter3.JPG"
+        ],
+        "variants": [
+            {
+                "id": "quarter-zip",
+                "name": "Quarter Zip",
+                "price": 50,
+                "stock": 11,
+                "squareLink": ""
+            }
+        ]
+    },
+    {
+        "id": "shorts",
+        "name": "Shorts",
+        "fullName": "Shorts",
+        "price": 45,
+        "image": "/merch_photos/shorts/shorts-grass.jpeg",
+        "images": [
+            "/merch_photos/shorts/shorts-grass.jpeg",
+            "/merch_photos/shorts/shorts-f.jpeg",
+            "/merch_photos/shorts/shorts-m.jpeg",
+            "/merch_photos/shorts/shorts-group.jpeg"
+        ],
+        "variants": [
+            {
+                "id": "shorts",
+                "name": "Shorts",
+                "price": 45,
+                "stock": 55,
+                "squareLink": ""
+            }
+        ]
+    },
+    {
+        "id": "departmentalPatches",
+        "name": "Departmental Patches",
+        "fullName": "Departmental Patches",
+        "price": 4,
+        "image": "/merch_photos/patches/departmental-patches.jpg",
+        "images": [
+            "/merch_photos/patches/departmental-patches.jpg"
+        ],
+        "variants": [
+            {
+                "id": "astronomy-patch",
+                "name": "Astronomy Patch",
+                "price": 4,
+                "stock": 2,
+                "squareLink": ""
+            },
+            {
+                "id": "biology-patch",
+                "name": "Biology Patch",
+                "price": 4,
+                "stock": 7,
+                "squareLink": ""
+            },
+            {
+                "id": "botany-patch",
+                "name": "Botany Patch",
+                "price": 4,
+                "stock": 10,
+                "squareLink": ""
+            },
+            {
+                "id": "caps-patch",
+                "name": "CAPS Patch",
+                "price": 4,
+                "stock": 7,
+                "squareLink": ""
+            },
+            {
+                "id": "chemistry-patch",
+                "name": "Chemistry Patch",
+                "price": 4,
+                "stock": 4,
+                "squareLink": ""
+            },
+            {
+                "id": "cs-patch",
+                "name": "CS Patch",
+                "price": 4,
+                "stock": 8,
+                "squareLink": ""
+            },
+            {
+                "id": "eosc-patch",
+                "name": "EOSC Patch",
+                "price": 4,
+                "stock": 8,
+                "squareLink": ""
+            },
+            {
+                "id": "math-patch",
+                "name": "Math Patch",
+                "price": 4,
+                "stock": 5,
+                "squareLink": ""
+            },
+            {
+                "id": "microbio-patch",
+                "name": "Microbio Patch",
+                "price": 4,
+                "stock": 18,
+                "squareLink": ""
+            },
+            {
+                "id": "neuro-patch",
+                "name": "Neuro Patch",
+                "price": 4,
+                "stock": 0,
+                "squareLink": ""
+            },
+            {
+                "id": "physics-patch",
+                "name": "Physics Patch",
+                "price": 4,
+                "stock": 3,
+                "squareLink": ""
+            }
+        ]
+    },
+    {
+        "id": "noveltyPatches",
+        "name": "Novelty Patches",
+        "fullName": "Novelty Patches",
+        "price": 3.50,
+        "image": "/merch_photos/patches/novelty-patches.jpg",
+        "images": [
+            "/merch_photos/patches/novelty-patches.jpg"
+        ],
+        "variants": [
+            {
+                "id": "cherry-blossom-patch",
+                "name": "Cherry Blossom Patch",
+                "price": 3.50,
+                "stock": 9,
+                "squareLink": ""
+            },
+            {
+                "id": "coffee-patch",
+                "name": "Coffee Patch",
+                "price": 3.50,
+                "stock": 10,
+                "squareLink": ""
+            },
+            {
+                "id": "mountain-patch",
+                "name": "Mountain Patch",
+                "price": 3.50,
+                "stock": 18,
+                "squareLink": ""
+            },
+            {
+                "id": "rose-garden-patch",
+                "name": "Rose Garden Patch",
+                "price": 3.50,
+                "stock": 8,
+                "squareLink": ""
+            },
+            {
+                "id": "sus-patch-blue",
+                "name": "SUS Patch Blue",
+                "price": 3,
+                "stock": 2,
+                "squareLink": ""
+            },
+            {
+                "id": "sus-patch-gold",
+                "name": "SUS Patch Gold",
+                "price": 4,
+                "stock": 13,
+                "squareLink": ""
+            }
+        ]
+    },
+    {
+        "id": "earnedPatches",
+        "name": "Earned Patches",
+        "fullName": "Earned Patches",
+        "price": 3.50,
+        "image": "/merch_photos/patches/earned-patches.jpg",
+        "images": [
+            "/merch_photos/patches/earned-patches.jpg"
+        ],
+        "variants": [
+            {
+                "id": "grad-patch",
+                "name": "Grad Patch",
+                "price": 3.50,
+                "stock": 2,
+                "squareLink": ""
+            }
+        ]
     }
 ]

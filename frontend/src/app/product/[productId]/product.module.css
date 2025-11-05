@@ -102,31 +102,125 @@
   margin-bottom: 40px;
 }
 
-.textGroup ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 8px;
+.textGroup h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a1a1a;
 }
 
-.textGroup li {
+.textGroup section {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.textGroup p {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+/* === Variant Selection === */
+.variantGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.variantButton {
+  background: white;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font-family: Figtree, sans-serif;
+  position: relative;
+}
+
+.variantButton:hover:not(.soldOut) {
+  border-color: #0173BE;
+  box-shadow: 0 2px 8px rgba(1, 115, 190, 0.1);
+}
+
+.variantButton.activeVariant {
+  border-color: #0173BE;
+  background: #F0F7FF;
+  box-shadow: 0 2px 8px rgba(1, 115, 190, 0.15);
+}
+
+.variantButton.soldOut {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #F5F5F5;
+}
+
+.variantName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.variantPrice {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0173BE;
+}
+
+.soldOutBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #FF4444;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.stockInfo {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.textList {
+    margin-bottom: 40px;
+}
+
+.textList ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.textList li {
   font-size: 20px;
   margin-bottom: 4px;
 }
 
 /* === Button === */
 .buyBtn {
-    background-color: #222755;
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
-    padding: 16px 40px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: block;
-    font-family: Figtree, sans-serif;
+  background-color: #222755;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  font-family: Figtree, sans-serif;
 }
 
 .buyBtn:hover {
@@ -201,5 +295,5 @@
     transform: translateY(-3px);
     filter: brightness(1.1);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
+  }
 }
