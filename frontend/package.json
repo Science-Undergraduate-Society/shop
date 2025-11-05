@@ -12,9 +12,12 @@
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
     "@fortawesome/react-fontawesome": "^0.2.3",
+    "@types/nodemailer": "^7.0.3",
     "next": "^15.5.2",
+    "nodemailer": "^7.0.10",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "square": "^43.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

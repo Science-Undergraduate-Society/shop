@@ -140,6 +140,36 @@
   margin-top: 20px;
 }
 
+.checkoutSection {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 2px solid #eee;
+}
+
+.checkoutSection h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222755;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
+}
+
+.error {
+  color: #dc3545;
+}
+
+.description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
 /* === Footer === */
 .footer_container {
   margin-top: auto;
