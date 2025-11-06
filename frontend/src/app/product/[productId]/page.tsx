@@ -58,10 +58,11 @@ export default function ProductPage() {
         <div className={styles.pageWrapper}>
             <Navbar />
 
-            <Notice />
-
             <div className={styles.pageLayout}>
                 <div className={styles.content}>
+                    
+                    <Notice />
+
                     {/* Left Panel: Thumbnails + Main Image */}
                     <div className={styles.leftPanel}>
                         <div className={styles.thumbnailColumn}>
