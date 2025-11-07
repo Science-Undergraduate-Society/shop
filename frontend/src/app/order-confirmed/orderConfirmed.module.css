@@ -180,6 +180,10 @@
   color: #0173BE;
 }
 
+.pickupLocationSub{
+    text-decoration: underline;
+}
+
 /* Button */
 .button {
   width: 100%;
@@ -206,6 +210,12 @@
   background-color: #CCC;
   cursor: not-allowed;
   transform: none;
+}
+
+.buttonLink {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
 }
 
 /* Confirmation */

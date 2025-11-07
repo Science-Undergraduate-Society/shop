@@ -1,16 +1,17 @@
 import styles from "./Navbar.module.css";
 import products from "../../data/products.json"
+import Link from "next/link";
 
 export const Navbar = () => {
     return (
         <nav className={styles.navbar}>
-            <a href="/">
+            <Link href="/">
                 <img
                     className={styles.logo}
                     alt="SUS Logo"
                     src="/long-logo.png"
                 />
-            </a>
+            </Link>
             
             <div className={styles.linkContainer}>
                 {products.map((product) => (

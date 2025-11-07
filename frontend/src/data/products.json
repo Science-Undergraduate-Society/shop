@@ -216,9 +216,10 @@
         "name": "Departmental Patches",
         "fullName": "Departmental Patches",
         "price": 4,
-        "image": "/merch_photos/patches/departmental-patches.jpg",
+        "image": "/merch_photos/patches/departmental_patches/CAPS.png",
         "images": [
-            "/merch_photos/patches/departmental-patches.jpg"
+            "/merch_photos/patches/departmental_patches/CAPS.png",
+            "/merch_photos/patches/departmental_patches/eosc.png"
         ],
         "variants": [
             {
@@ -305,9 +306,10 @@
         "name": "Novelty Patches",
         "fullName": "Novelty Patches",
         "price": 3.50,
-        "image": "/merch_photos/patches/novelty-patches.jpg",
+        "image": "/merch_photos/patches/novelty_patches/cherry_blossom.png",
         "images": [
-            "/merch_photos/patches/novelty-patches.jpg"
+            "/merch_photos/patches/novelty_patches/cherry_blossom.png",
+            "/merch_photos/patches/novelty_patches/coffee.png"
         ],
         "variants": [
             {
@@ -359,9 +361,9 @@
         "name": "Earned Patches",
         "fullName": "Earned Patches",
         "price": 3.50,
-        "image": "/merch_photos/patches/earned-patches.jpg",
+        "image": "/merch_photos/patches/earned_patches/grad.png",
         "images": [
-            "/merch_photos/patches/earned-patches.jpg"
+            "/merch_photos/patches/earned_patches/grad.png"
         ],
         "variants": [
             {
