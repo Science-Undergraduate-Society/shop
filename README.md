@@ -5,29 +5,33 @@ This site is where students can browse and purchase official SUS merchandise lik
 
 ---
 
-## 🌟 Features (August 2025)
-- Browse all current merchandise with images and descriptions
-- Purchase items via Square links (Taken down as of September 2025 for maintenance)
-- Responsive layout for both desktop and mobile  
+# Pickup Management
 
----
+A) Purchase Tracking & Email Notifications
 
-## 🚀 Getting Started  
+Square provides automatic email notifications:
 
-### Prerequisites  
-- Node.js (>=18)  
-- npm or yarn  
+Order Confirmation Emails - Sent automatically when purchase is made
+Order Status Updates - Sent when order status changes
+Pickup Ready Notifications - Sent when order is ready
+For developers, Square offers:
 
-### Installation  
-```bash
-# Clone the repo
-git clone https://github.com/ubc-sus/shop.susubc.ca.git
+Webhooks API - Get real-time notifications when orders are created/updated:
 
-# Move into the project folder
-cd shop.susubc.ca
+order.created - Triggered when an order is created
+order.updated - Triggered when order status changes
+order.fulfillment.updated - Triggered when fulfillment status changes
 
-# Install dependencies
-npm install
 
-# Run the development server
-npm run dev
+B) Pickup Management
+
+Square Dashboard includes:
+
+Order Manager - View all pickup orders in one place
+Order Status Tracking - Mark orders as:
+Received
+In Progress
+Ready for Pickup
+Completed
+Customer Notifications - Automatic SMS/email when order is ready
+Pickup Scheduling - Customers can select pickup time windows

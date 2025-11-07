@@ -1,0 +1,331 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  font-family: Figtree, sans-serif;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 100%;
+}
+
+/* Boxes */
+.verificationBox,
+.bookingBox,
+.confirmationBox,
+.errorBox {
+  background: white;
+  border-radius: 20px;
+  padding: 48px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+.verificationBox h1,
+.bookingBox h1,
+.confirmationBox h1,
+.errorBox h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222755;
+  text-align: center;
+}
+
+.orderInfo {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 32px;
+  padding: 12px;
+  background: #F0F7FF;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+/* Verification Section */
+.verificationSection {
+  margin-top: 32px;
+}
+
+.verificationSection h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.verificationSection p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-family: monospace;
+  text-align: center;
+  letter-spacing: 4px;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0173BE;
+}
+
+.helperText {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Pickup Section */
+.pickupSection {
+  margin-top: 24px;
+}
+
+.pickupSection h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.formGroup {
+  margin-bottom: 24px;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.select {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  font-family: Figtree, sans-serif;
+}
+
+.select:hover {
+  border-color: #0173BE;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #0173BE;
+}
+
+.select:disabled {
+  background: #F5F5F5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Location Info */
+.locationInfo {
+  background: #F0F7FF;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 24px 0;
+  border-left: 4px solid #0173BE;
+}
+
+.locationInfo h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.locationInfo p {
+  margin: 4px 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.hours {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #D0E7F9;
+  font-weight: 600;
+  color: #0173BE;
+}
+
+.pickupLocationSub{
+    text-decoration: underline;
+}
+
+/* Button */
+.button {
+  width: 100%;
+  background-color: #222755;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: Figtree, sans-serif;
+  margin-top: 8px;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #0173BE;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(1, 115, 190, 0.3);
+}
+
+.button:disabled {
+  background-color: #CCC;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.buttonLink {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Confirmation */
+.successIcon {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.confirmationBox h1 {
+  color: #0173BE;
+}
+
+.bookingDetails {
+  background: #F0F7FF;
+  padding: 24px;
+  border-radius: 12px;
+  margin: 24px 0;
+}
+
+.bookingDetails h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #D0E7F9;
+}
+
+.detailRow:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: 600;
+  color: #666;
+}
+
+.value {
+  text-align: right;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.reminderBox {
+  background: #E8F5E9;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 24px 0;
+  border-left: 4px solid #4CAF50;
+}
+
+.reminderBox h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2E7D32;
+}
+
+.reminderBox p {
+  color: #333;
+  margin: 4px 0;
+}
+
+.note {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #2E7D32;
+}
+
+/* Error Box */
+.errorBox {
+  text-align: center;
+}
+
+.errorBox h1 {
+  color: #FF4444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .verificationBox,
+  .bookingBox,
+  .confirmationBox,
+  .errorBox {
+    padding: 32px 24px;
+  }
+
+  .verificationBox h1,
+  .bookingBox h1,
+  .confirmationBox h1,
+  .errorBox h1 {
+    font-size: 24px;
+  }
+
+  .pickupSection h2 {
+    font-size: 20px;
+  }
+
+  .detailRow {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .value {
+    text-align: left;
+  }
+}
