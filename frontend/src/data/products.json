@@ -309,7 +309,8 @@
         "image": "/merch_photos/patches/novelty_patches/cherry_blossom.png",
         "images": [
             "/merch_photos/patches/novelty_patches/cherry_blossom.png",
-            "/merch_photos/patches/novelty_patches/coffee.png"
+            "/merch_photos/patches/novelty_patches/coffee.png",
+            "/merch_photos/patches/earned_patches/grad.png"
         ],
         "variants": [
             {
@@ -353,19 +354,7 @@
                 "price": 4,
                 "stock": 13,
                 "squareLink": "https://square.link/u/EX2KPL3T"
-            }
-        ]
-    },
-    {
-        "id": "earnedPatches",
-        "name": "Earned Patches",
-        "fullName": "Earned Patches",
-        "price": 3.50,
-        "image": "/merch_photos/patches/earned_patches/grad.png",
-        "images": [
-            "/merch_photos/patches/earned_patches/grad.png"
-        ],
-        "variants": [
+            },
             {
                 "id": "grad-patch",
                 "name": "Grad Patch",
