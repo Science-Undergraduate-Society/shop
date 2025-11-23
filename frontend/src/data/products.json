@@ -10,7 +10,8 @@
             "/merch_photos/letterman/letterman2.JPG",
             "/merch_photos/letterman/letterman3.JPG",
             "/merch_photos/letterman/letterman4.JPG",
-            "/merch_photos/letterman/letterman5.JPG"
+            "/merch_photos/letterman/letterman5.JPG",
+            "/merch_photos/size_guide.png"
         ],
         "priceNote": "This year only, jackets are discounted at $80! Prices will return to $100 in Summer 2026...",
         "variants": [
@@ -35,7 +36,8 @@
             "/merch_photos/hoodies/blue-hoodie.png",
             "/merch_photos/hoodies/pink-hoodie.jpg",
             "/merch_photos/hoodies/sand-hoodie.png",
-            "/merch_photos/hoodies/white-hoodie.png"
+            "/merch_photos/hoodies/white-hoodie.png",
+            "/merch_photos/size_guide.png"
         ],
         "variants": [
             {
@@ -107,7 +109,8 @@
             "/merch_photos/crewnecks/black-crew.png",
             "/merch_photos/crewnecks/blue-crew.png",
             "/merch_photos/crewnecks/pink-crew.jpg",
-            "/merch_photos/crewnecks/sand-crew.png"
+            "/merch_photos/crewnecks/sand-crew.png",
+            "/merch_photos/size_guide.png"
         ],
         "variants": [
             {
@@ -177,7 +180,8 @@
         "images": [
             "/merch_photos/quarter_zips/quarter1.JPG",
             "/merch_photos/quarter_zips/quarter2.JPG",
-            "/merch_photos/quarter_zips/quarter3.JPG"
+            "/merch_photos/quarter_zips/quarter3.JPG",
+            "/merch_photos/size_guide.png"
         ],
         "variants": [
             {
@@ -199,7 +203,8 @@
             "/merch_photos/shorts/shorts-grass.jpeg",
             "/merch_photos/shorts/shorts-f.jpeg",
             "/merch_photos/shorts/shorts-m.jpeg",
-            "/merch_photos/shorts/shorts-group.jpeg"
+            "/merch_photos/shorts/shorts-group.jpeg",
+            "/merch_photos/size_guide.png"
         ],
         "variants": [
             {
@@ -219,7 +224,8 @@
         "image": "/merch_photos/patches/departmental_patches/CAPS.png",
         "images": [
             "/merch_photos/patches/departmental_patches/CAPS.png",
-            "/merch_photos/patches/departmental_patches/eosc.png"
+            "/merch_photos/patches/departmental_patches/eosc.png",
+            "/merch_photos/size_guide.png"
         ],
         "variants": [
             {
@@ -310,7 +316,8 @@
         "images": [
             "/merch_photos/patches/novelty_patches/cherry_blossom.png",
             "/merch_photos/patches/novelty_patches/coffee.png",
-            "/merch_photos/patches/earned_patches/grad.png"
+            "/merch_photos/patches/earned_patches/grad.png",
+            "/merch_photos/size_guide.png"
         ],
         "variants": [
             {
