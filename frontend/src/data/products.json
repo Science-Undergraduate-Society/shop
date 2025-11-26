@@ -224,8 +224,7 @@
         "image": "/merch_photos/patches/departmental_patches/CAPS.png",
         "images": [
             "/merch_photos/patches/departmental_patches/CAPS.png",
-            "/merch_photos/patches/departmental_patches/eosc.png",
-            "/merch_photos/size_guide.png"
+            "/merch_photos/patches/departmental_patches/eosc.png"
         ],
         "variants": [
             {
@@ -307,6 +306,31 @@
             }
         ]
     },
+    {   
+        "id": "earnedPatches",
+        "name": "Earned Patches",
+        "fullName": "Earned Patches",
+        "price": 3.00,
+        "image": null,
+        "images": [
+        ],
+        "variants": [
+            {
+                "id": "sus-patch-blue",
+                "name": "SUS Patch Blue",
+                "price": 3,
+                "stock": 2,
+                "squareLink": "https://square.link/u/s4AwtakI"
+            },
+            {
+                "id": "sus-patch-gold",
+                "name": "SUS Patch Gold",
+                "price": 3,
+                "stock": 13,
+                "squareLink": "https://square.link/u/EX2KPL3T"
+            }
+        ]
+    },
     {
         "id": "noveltyPatches",
         "name": "Novelty Patches",
@@ -316,8 +340,7 @@
         "images": [
             "/merch_photos/patches/novelty_patches/cherry_blossom.png",
             "/merch_photos/patches/novelty_patches/coffee.png",
-            "/merch_photos/patches/earned_patches/grad.png",
-            "/merch_photos/size_guide.png"
+            "/merch_photos/patches/novelty_patches/grad.png"
         ],
         "variants": [
             {
@@ -347,20 +370,6 @@
                 "price": 3.50,
                 "stock": 8,
                 "squareLink": "https://square.link/u/LaIvcOtj"
-            },
-            {
-                "id": "sus-patch-blue",
-                "name": "SUS Patch Blue",
-                "price": 3,
-                "stock": 2,
-                "squareLink": "https://square.link/u/s4AwtakI"
-            },
-            {
-                "id": "sus-patch-gold",
-                "name": "SUS Patch Gold",
-                "price": 4,
-                "stock": 13,
-                "squareLink": "https://square.link/u/EX2KPL3T"
             },
             {
                 "id": "grad-patch",

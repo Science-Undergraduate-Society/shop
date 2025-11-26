@@ -38,7 +38,10 @@ export default function Home() {
                         <div className={styles.newBadge}>New</div>
                       )}
                       <div className={styles.imageWrapper}>
-                        <img src={item.image} alt={item.name} />
+                        {item.image ? 
+                          <img src={item.image} alt={`Main ${item.fullName}`} /> :
+                          <img src={"/temp-hero-img.png"} alt={`Main ${item.fullName}`} />
+                        }
                       </div>
                       <div className={styles.info}>
                         <h3>{item.name}</h3>

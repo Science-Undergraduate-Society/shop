@@ -77,7 +77,10 @@ export default function ProductPage() {
                             ))}
                         </div>
                         <div className={styles.mainImage}>
-                            <img src={selectedImage} alt={`Main ${product.fullName}`} />
+                            {selectedImage ? 
+                                <img src={selectedImage} alt={`Main ${product.fullName}`} /> :
+                                <img src={"/temp-hero-img.png"} alt={`Main ${product.fullName}`} />
+                            }
                         </div>
                     </div>
 
