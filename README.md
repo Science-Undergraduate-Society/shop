@@ -8,7 +8,7 @@ This site is where students can browse and purchase official SUS merchandise lik
 # Pickup Management
 
 A) Purchase Tracking & Email Notifications
-
+ 
 Square provides automatic email notifications:
 
 Order Confirmation Emails - Sent automatically when purchase is made
