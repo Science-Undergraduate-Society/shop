@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import styles from "./orderConfirmed.module.css";
-import { Footer } from "@/components/Footer/Footer";
-import { Navbar } from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function OrderConfirmedPage() {
   return (

@@ -18,6 +18,11 @@ export default function Product({ params }: { params: Promise<{ productId: strin
   const { productId } = use(params)
   const product = products.find(product => product.id === productId)
 
+  // Initialize hooks before conditional returns
+  const [variant, setVariant] = useState<Variant>(product?.variants[0] || {} as Variant)
+  const [image, setImage] = useState<string>(product?.variants[0]?.images[0] || '')
+  const [size, setSize] = useState<Size | null>(null)
+
   if (!product) {
     return (
       <main className={styles.product}>
@@ -25,10 +30,6 @@ export default function Product({ params }: { params: Promise<{ productId: strin
       </main>
     )
   }
-
-  const [variant, setVariant] = useState<Variant>(product.variants[0])
-  const [image, setImage] = useState<string>(variant.images[0])
-  const [size, setSize] = useState<Size | null>(null)
 
   const breadcrumb = [
     'Shop',

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -58,18 +59,20 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.content}>
                 <p className={styles.blurb}>
-                    All merchandise is designed and produced by the Science Undergraduate Society's Sales Committee!
+                    All merchandise is designed and produced by the Science Undergraduate Society&apos;s Sales Committee!
                     <br />
                     They work to boost Science pride, school spirit and give back to our community.
                     <br />
                     We hope you like the cool merch!
                 </p>
 
-                <img
+                <Image
                     className={styles.logo}
                     alt="SUS Logo"
                     src="/white-logo.png"
                     draggable="false"
+                    width={200}
+                    height={200}
                 />
 
                 <div className={styles.socialContainer}>

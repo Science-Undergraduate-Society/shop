@@ -14,7 +14,7 @@ export default function ProductDetails({
   product: Product
   variant: Variant
   size: Size | null
-  onVariantChange: (variant: any) => void
+  onVariantChange: (variant: Variant) => void
   onSizeChange: (size: Size) => void
 }) {
   const [shake, setShake] = useState<boolean>(false)

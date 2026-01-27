@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.home}>
         <div className={styles.banner}>
           <img src="/banner.svg" alt="Shop Banner" draggable="false" />
-          <img src="/banner-cameos.png" alt="Cameos" draggable="false" />
+          {/* <img src="/banner-cameos.png" alt="Cameos" draggable="false" /> */}
         </div>
         <h1 className={styles.category}>All Merch</h1>
         <div className={styles.products}>
