@@ -1,50 +1,61 @@
 .navbar {
-    position: absolute;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  gap: 20px;
+  padding: 20px clamp(4px, 4vw, 30px);
+  background: var(--color-ui-10);
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
 
+  .logo {
+    position: relative;
+    width: 150px;
+    height: 37px;
+  }
+
+  .links {
     display: flex;
+    gap: clamp(4px, 2vw, 20px);
     align-items: center;
-    justify-content: space-between;
-    background-color: #F5F5F5;
-    padding: 32px 44px;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
 
-.backlinkButton {
-    background: none;
-    color: #222755;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 8px 16px;
-    border: 1px solid black;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: block;
-    font-family: Figtree, sans-serif;
-}
+    > * {
+      padding: 4px;
+      transition: all 0.2s ease-in-out;
 
-.backlinkButton:hover {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.logo {
-    width: 160px;
-    height: auto;
-    cursor: pointer;
-}
-
-.linkContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-}
-
-.linkContainer {
-    a:hover {
-        color: #4f58a9;
+      &:hover {
+        color: var(--color-ui-60);
+      }
     }
+
+    .cart {
+      position: relative;
+      width: 30px;
+      height: 30px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .badge {
+        display: flex;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -8px;
+        right: -8px;
+        background: var(--color-ui-60);
+        border-radius: 50%;
+        font-size: var(--font-size-xs);
+        font-weight: bold;
+        color: var(--color-ui-10);
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        z-index: 1;
+      }
+    }
+  }
 }

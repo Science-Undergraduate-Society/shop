@@ -1,26 +1,22 @@
-import styles from "./Navbar.module.css";
-import products from "../../data/products.json"
-import Link from "next/link";
+import Link from 'next/link'
+import Image from 'next/image'
+import styles from './Navbar.module.css'
 
-export const Navbar = () => {
-    return (
-        <nav className={styles.navbar}>
-            <Link href="/">
-                <img
-                    className={styles.logo}
-                    alt="SUS Logo"
-                    src="/long-logo.png"
-                />
-            </Link>
-            
-            <div className={styles.linkContainer}>
-                {products.map((product) => (
-                    <a key={product.id} href={`/product/${product.id}`}>
-                        {product.name}
-                    </a>
-                ))}
-                <a href="https://www.susubc.ca/" className={styles.backlinkButton}>SUS Home Page</a>
-            </div>
-        </nav>
-    )
+export default function Navbar() {
+  return (
+    <nav className={styles.navbar}>
+      <Link href="/" className={styles.logo}>
+        <Image src="/sus-logo.svg" alt="SUS Logo" fill draggable="false" />
+      </Link>
+      <div className={styles.links}>
+        <Link href="/">Shop</Link>
+        {/* <Link href="/faq">FAQ</Link> */}
+        <Link href="https://www.susubc.ca/">SUS Home Page</Link>
+        {/* <Link href="/cart" className={styles.cart}>
+          <span className={styles.badge}>_</span>
+          <Image src="/icons/cart.svg" alt="Cart" fill draggable="false" />
+        </Link> */}
+      </div>
+    </nav>
+  )
 }

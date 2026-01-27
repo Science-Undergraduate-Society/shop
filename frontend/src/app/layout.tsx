@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
-import { Figtree } from "next/font/google"
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Figtree } from 'next/font/google'
+import Navbar from '@/components/Navbar/Navbar'
+import Footer from '@/components/Footer/Footer'
+import './globals.css'
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -24,7 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${figtree.variable} ${figtree.variable}`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
