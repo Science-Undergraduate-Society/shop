@@ -13,7 +13,7 @@ import {
     faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 
-export const Footer = () => {
+export default function Footer() {
     const socialLinks = [
         {
             name: "Email",
@@ -51,16 +51,25 @@ export const Footer = () => {
             icon: faYoutube,
             extra: styles.iconYoutube,
             link: "https://www.youtube.com/@scienceundergraduatesocietyubc"
-        },
-    ];
+        }
+    ]
 
     return (
         <footer className={styles.footer}>
             <div className={styles.content}>
+                <p className={styles.blurb}>
+                    All merchandise is designed and produced by the Science Undergraduate Society's Sales Committee!
+                    <br />
+                    They work to boost Science pride, school spirit and give back to our community.
+                    <br />
+                    We hope you like the cool merch!
+                </p>
+
                 <img
                     className={styles.logo}
                     alt="SUS Logo"
                     src="/white-logo.png"
+                    draggable="false"
                 />
 
                 <div className={styles.socialContainer}>
@@ -78,9 +87,9 @@ export const Footer = () => {
                 </div>
 
                 <p className={styles.copyright}>
-                    Copyright © 2025 UBC Science Undergraduate Society
+                    Copyright © 2026 UBC Science Undergraduate Society
                 </p>
             </div>
         </footer>
-    );
-};
+    )
+}
