@@ -14,11 +14,11 @@ export const products: Product[] = [
         color: 'darkBlue',
         price: 80,
         images: [
-          '/merch_photos/letterman/letterman1.jpg',
-          '/merch_photos/letterman/letterman2.jpg',
-          '/merch_photos/letterman/letterman3.jpg',
-          '/merch_photos/letterman/letterman4.jpg',
-          '/merch_photos/letterman/letterman5.jpg'
+          '/merch_photos/letterman/letterman1.JPG',
+          '/merch_photos/letterman/letterman2.JPG',
+          '/merch_photos/letterman/letterman3.JPG',
+          '/merch_photos/letterman/letterman4.JPG',
+          '/merch_photos/letterman/letterman5.JPG'
         ],
         sizes: { S: false, M: false, L: true, XL: true }
       }
@@ -168,9 +168,9 @@ export const products: Product[] = [
         color: 'darkBlue',
         price: 50,
         images: [
-          '/merch_photos/quarter_zips/quarter1.jpg',
-          '/merch_photos/quarter_zips/quarter2.jpg',
-          '/merch_photos/quarter_zips/quarter3.jpg'
+          '/merch_photos/quarter_zips/quarter1.JPG',
+          '/merch_photos/quarter_zips/quarter2.JPG',
+          '/merch_photos/quarter_zips/quarter3.JPG'
         ],
         sizes: { S: true, M: true, L: true, XL: true }
       }
@@ -205,21 +205,21 @@ export const products: Product[] = [
     thumbnail: '/merch_photos/patches/departmental_patches/biol.png',
     variants: [
       {
-        id: 'astr-patch',
-        name: 'Astronomy Patch',
-        price: 4,
-        inStock: false,
-        images: [
-          PLACEHOLDER_IMAGE
-        ]
-      },
-      {
         id: 'biol-patch',
         name: 'Biology Patch',
         price: 4,
         inStock: false,
         images: [
           '/merch_photos/patches/departmental_patches/biol.png'
+        ]
+      },
+      {
+        id: 'astr-patch',
+        name: 'Astronomy Patch',
+        price: 4,
+        inStock: false,
+        images: [
+          PLACEHOLDER_IMAGE
         ]
       },
       {
@@ -237,7 +237,7 @@ export const products: Product[] = [
         price: 4,
         inStock: false,
         images: [
-          '/merch_photos/patches/departmental_patches/caps.png'
+          '/merch_photos/patches/departmental_patches/CAPS.png'
         ]
       },
       {
@@ -255,7 +255,7 @@ export const products: Product[] = [
         price: 4,
         inStock: false,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/departmental_patches/cpsc.png'
         ]
       },
       {
