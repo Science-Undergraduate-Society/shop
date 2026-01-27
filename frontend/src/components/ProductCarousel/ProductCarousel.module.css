@@ -1,0 +1,33 @@
+.productCarousel {
+  width: 100%;
+  padding: 12px 0;
+  overflow-x: hidden;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  will-change: transform;
+  animation: scroll 30s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}
