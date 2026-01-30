@@ -1,6 +1,7 @@
 import { products } from '@/data/products'
 import ProductCard from '@/components/ProductCard/ProductCard'
 import styles from './page.module.css'
+import { Notice } from '@/components/Notice/Notice'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
           <img src="/banner.svg" alt="Shop Banner" draggable="false" />
           {/* <img src="/banner-cameos.png" alt="Cameos" draggable="false" /> */}
         </div>
+        <Notice/>
         <h1 className={styles.category}>All Merch</h1>
         <div className={styles.products}>
           {products.map(product => (
