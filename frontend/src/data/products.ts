@@ -57,15 +57,15 @@ export const products: Product[] = [
         ],
         sizes: { S: true, M: false, L: false, XL: false }
       },
-      {
-        color: 'greyWhite',
-        price: 40.50,
-        images: [
-          '/merch_photos/hoodies/grey-hoodie.png',
-          '/merch_photos/hoodies/hoodie-grey-spotlight.jpeg'
-        ],
-        sizes: { S: false, M: false, L: false, XL: false }
-      },
+      // {
+      //   color: 'greyWhite',
+      //   price: 40.50,
+      //   images: [
+      //     '/merch_photos/hoodies/grey-hoodie.png',
+      //     '/merch_photos/hoodies/hoodie-grey-spotlight.jpeg'
+      //   ],
+      //   sizes: { S: false, M: false, L: false, XL: false }
+      // },
       {
         color: 'lightBlue',
         price: 40.50,
@@ -74,22 +74,22 @@ export const products: Product[] = [
         ],
         sizes: { S: false, M: false, L: true, XL: true }
       },
-      {
-        color: 'sand',
-        price: 40.50,
-        images: [
-          '/merch_photos/hoodies/sand-hoodie.png'
-        ],
-        sizes: { S: false, M: false, L: false, XL: false }
-      },
-      {
-        color: 'pink',
-        price: 55,
-        images: [
-          '/merch_photos/hoodies/pink-hoodie.jpg'
-        ],
-        sizes: { S: false, M: false, L: false, XL: false }
-      }
+      // {
+      //   color: 'sand',
+      //   price: 40.50,
+      //   images: [
+      //     '/merch_photos/hoodies/sand-hoodie.png'
+      //   ],
+      //   sizes: { S: false, M: false, L: false, XL: false }
+      // },
+      // {
+      //   color: 'pink',
+      //   price: 55,
+      //   images: [
+      //     '/merch_photos/hoodies/pink-hoodie.jpg'
+      //   ],
+      //   sizes: { S: false, M: false, L: false, XL: false }
+      // }
     ]
   },
   {
@@ -147,14 +147,14 @@ export const products: Product[] = [
         ],
         sizes: { S: false, M: false, L: false, XL: true }
       },
-      {
-        color: 'pink',
-        price: 45,
-        images: [
-          '/merch_photos/crewnecks/pink-crew.jpg'
-        ],
-        sizes: { S: false, M: false, L: false, XL: false }
-      }
+      // {
+      //   color: 'pink',
+      //   price: 45,
+      //   images: [
+      //     '/merch_photos/crewnecks/pink-crew.jpg'
+      //   ],
+      //   sizes: { S: false, M: false, L: false, XL: false }
+      // }
     ]
   },
   {
