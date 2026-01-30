@@ -1,8 +1,8 @@
 .productCard {
   display: flex;
   flex-direction: column;
-  width: 235px;
-  gap: 12px;
+  width: 188px;
+  gap: 9.6px;
   border-radius: var(--border-radius-lg);
   transition: all 0.2s ease-in-out;
 
@@ -14,7 +14,7 @@
 .thumbnail {
   position: relative;
   width: 100%;
-  height: 265px;
+  height: 212px;
 
   img {
     border-radius: var(--border-radius-lg);
@@ -25,14 +25,14 @@
   .new {
     position: absolute;
     width: 70%;
-    top: 6.75px;
-    right: -20px;
-    padding: 4px 0 4px 30px;
+    top: 5.4px;
+    right: -16px;
+    padding: 3.2px 0 3.2px 24px;
     background: url('/background-stem.svg');
     font-size: var(--font-size-lg);
     color: var(--color-ui-10);
     text-align: center;
-    clip-path: polygon(64px 0%, 143px 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(51.2px 0%, 114.4px 0%, 100% 100%, 0% 100%);
     transform: rotate(30deg);
     z-index: 1;
   }
@@ -45,12 +45,12 @@
 
 .swatches {
   display: flex;
-  gap: 4px;
+  gap: 3.2px;
   cursor: auto;
 
   .swatch {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     border: 1px solid #d9d9d9;
     border-radius: 50%;
     cursor: pointer;

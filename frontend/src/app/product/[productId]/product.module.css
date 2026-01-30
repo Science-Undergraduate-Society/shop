@@ -1,19 +1,20 @@
 .product {
   display: flex;
   flex-direction: column;
-  padding: 130px clamp(30px, 6vw, 130px) 160px;
+  padding: 104px clamp(24px, 6vw, 104px) 128px;
   align-items: center;
 }
 
 .breadcrumb {
   color: var(--color-ui-60);
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   text-transform: capitalize;
   user-select: none;
   align-self: flex-start;
 }
 
 .overview {
+  margin-top: 36px;
   display: flex;
   flex-wrap: wrap;
   gap: clamp(20px, 6vw, 60px);
@@ -21,5 +22,5 @@
 }
 
 .viewMoreMerch {
-  margin: 100px 0 32px;
+  margin: 80px 0 25.6px;
 }

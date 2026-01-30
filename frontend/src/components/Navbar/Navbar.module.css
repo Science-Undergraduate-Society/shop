@@ -3,8 +3,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  gap: 20px;
-  padding: 20px clamp(4px, 4vw, 30px);
+  gap: 16px;
+  padding: 16px clamp(3.2px, 4vw, 24px);
   background: var(--color-ui-10);
   align-items: center;
   justify-content: space-between;
@@ -12,17 +12,17 @@
 
   .logo {
     position: relative;
-    width: 150px;
-    height: 37px;
+    width: 120px;
+    height: 29.6px;
   }
 
   .links {
     display: flex;
-    gap: clamp(4px, 2vw, 20px);
+    gap: clamp(3.2px, 2vw, 16px);
     align-items: center;
 
     > * {
-      padding: 4px;
+      padding: 3.2px;
       transition: all 0.2s ease-in-out;
 
       &:hover {
@@ -32,8 +32,8 @@
 
     .cart {
       position: relative;
-      width: 30px;
-      height: 30px;
+      width: 24px;
+      height: 24px;
 
       &:hover {
         transform: scale(1.1);
@@ -42,10 +42,10 @@
       .badge {
         display: flex;
         position: absolute;
-        width: 20px;
-        height: 20px;
-        top: -8px;
-        right: -8px;
+        width: 16px;
+        height: 16px;
+        top: -6.4px;
+        right: -6.4px;
         background: var(--color-ui-60);
         border-radius: 50%;
         font-size: var(--font-size-xs);
