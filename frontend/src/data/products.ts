@@ -314,10 +314,100 @@ export const products: Product[] = [
     thumbnail: '/merch_photos/patches/novelty_patches/cherry_blossom.png',
     variants: [
       {
+        id: 'observatory-patch',
+        name: 'Observatory Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/observatory.png'
+        ]
+      },
+      {
+        id: 'pipette-patch',
+        name: 'Pipette Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/pipette.png'
+        ]
+      },
+      {
+        id: 'cell-patch',
+        name: 'Cell Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/cell.png'
+        ]
+      },
+      {
+        id: 'heart-patch',
+        name: 'Heart Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/heart.png'
+        ]
+      },
+      {
+        id: 'mole-in-beaker-patch',
+        name: 'Mole in Beaker Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/mole-in-beaker.png'
+        ]
+      },
+      {
+        id: 'computer',
+        name: 'Computer Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/computer.png'
+        ]
+      },
+      {
+        id: 'orca-stamp',
+        name: 'Orca Stamp Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/orca-stamp.png'
+        ]
+      },
+      {
+        id: 'pi-patch',
+        name: 'Pi Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/pi.png'
+        ]
+      },
+      {
+        id: 'neuron-patch',
+        name: 'Neuron Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/neuron.png'
+        ]
+      },
+      {
+        id: 'cat-in-box-patch',
+        name: 'Cat in Box Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/cat-in-box.png'
+        ]
+      },
+      {
         id: 'cherry-blossom-patch',
         name: 'Cherry Blossom Patch',
         price: 3.50,
-        inStock: false,
+        inStock: true,
         images: [
           '/merch_photos/patches/novelty_patches/cherry_blossom.png'
         ]
@@ -326,7 +416,7 @@ export const products: Product[] = [
         id: 'coffee-patch',
         name: 'Coffee Patch',
         price: 3.50,
-        inStock: false,
+        inStock: true,
         images: [
           '/merch_photos/patches/novelty_patches/coffee.png'
         ]
@@ -335,7 +425,7 @@ export const products: Product[] = [
         id: 'mountain-patch',
         name: 'Mountain Patch',
         price: 3.50,
-        inStock: false,
+        inStock: true,
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -344,27 +434,27 @@ export const products: Product[] = [
         id: 'rose-garden-patch',
         name: 'Rose Garden Patch',
         price: 3.50,
-        inStock: false,
+        inStock: true,
         images: [
           PLACEHOLDER_IMAGE
         ]
       },
       {
         id: 'sus-patch-blue',
-        name: 'SUS Patch Blue',
+        name: 'SUS Member Star Blue',
         price: 3,
-        inStock: false,
+        inStock: true,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/earned_patches/sus-member-star.png',
         ]
       },
       {
         id: 'sus-patch-gold',
-        name: 'SUS Patch Gold',
+        name: 'SUS Executive Star Gold',
         price: 4,
-        inStock: false,
+        inStock: true,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/earned_patches/sus-exec-star.png',
         ]
       }
     ]
@@ -378,28 +468,10 @@ export const products: Product[] = [
     thumbnail: '/merch_photos/patches/earned_patches/grad.png',
     variants: [
       {
-        id: 'sus-member-star',
-        name: 'Grad Patch',
-        price: 4.00,
-        inStock: true,
-        images: [
-          PLACEHOLDER_IMAGE
-        ]
-      },
-      {
-        id: 'sus-exec-star',
-        name: 'Grad Patch',
-        price: 4.00,
-        inStock: true,
-        images: [
-          PLACEHOLDER_IMAGE
-        ]
-      },
-      {
         id: 'grad-patch',
         name: 'Grad Patch',
         price: 3.50,
-        inStock: false,
+        inStock: true,
         images: [
           '/merch_photos/patches/earned_patches/grad.png'
         ]
