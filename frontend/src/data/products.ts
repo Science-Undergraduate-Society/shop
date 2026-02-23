@@ -378,6 +378,24 @@ export const products: Product[] = [
     thumbnail: '/merch_photos/patches/earned_patches/grad.png',
     variants: [
       {
+        id: 'sus-member-star',
+        name: 'Grad Patch',
+        price: 4.00,
+        inStock: true,
+        images: [
+          PLACEHOLDER_IMAGE
+        ]
+      },
+      {
+        id: 'sus-exec-star',
+        name: 'Grad Patch',
+        price: 4.00,
+        inStock: true,
+        images: [
+          PLACEHOLDER_IMAGE
+        ]
+      },
+      {
         id: 'grad-patch',
         name: 'Grad Patch',
         price: 3.50,
