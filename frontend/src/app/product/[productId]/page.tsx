@@ -2,7 +2,7 @@
 
 import { use, useState } from 'react'
 import { products } from '@/data/products'
-import { Size, Variant } from '@/lib/types'
+import { Size, Variation } from '@/lib/types'
 import ProductGallery from '@/components/ProductGallery/ProductGallery'
 import ProductDetails from '@/components/ProductDetails/ProductDetails'
 import ProductCarousel from '@/components/ProductCarousel/ProductCarousel'
@@ -20,8 +20,8 @@ export default function Product({ params }: { params: Promise<{ productId: strin
   const product = products.find(product => product.id === productId)
 
   // Initialize hooks before conditional returns
-  const [variant, setVariant] = useState<Variant>(product?.variants[0] || {} as Variant)
-  const [image, setImage] = useState<string>(product?.variants[0]?.images[0] || '')
+  const [variation, setVariation] = useState<Variation>(product?.variations[0] || {} as Variation)
+  const [image, setImage] = useState<string>(product?.variations[0]?.images[0] || '')
   const [size, setSize] = useState<Size | null>(null)
 
   if (!product) {
@@ -39,17 +39,17 @@ export default function Product({ params }: { params: Promise<{ productId: strin
   ].join(' > ')
 
   const thumbnails = [
-    ...variant.images,
+    ...variation.images,
     ...(product.type === 'clothing' && SIZE_GUIDE_INCLUDE_LIST.includes(product.id) ? [SIZE_GUIDE] : [])
   ]
 
-  function updateVariant(newVariant: Variant) {
-    if (variant === newVariant) {
+  function updateVariation(newVariation: Variation) {
+    if (variation === newVariation) {
       return
     }
 
-    setVariant(newVariant)
-    setImage(newVariant.images[0])
+    setVariation(newVariation)
+    setImage(newVariation.images[0])
     setSize(null)
   }
 
@@ -68,9 +68,9 @@ export default function Product({ params }: { params: Promise<{ productId: strin
           />
           <ProductDetails
             product={product}
-            variant={variant}
+            variation={variation}
             size={size}
-            onVariantChange={updateVariant}
+            onVariationChange={updateVariation}
             onSizeChange={setSize}
           />
         </div>

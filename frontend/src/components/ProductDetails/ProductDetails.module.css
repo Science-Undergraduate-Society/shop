@@ -97,7 +97,7 @@
         cursor: default;
         position: relative;
 
-        &.variant::after,
+        &.variation::after,
         &.size::after {
           content: "";
           position: absolute;
@@ -107,7 +107,7 @@
           transform: translate(-50%, -50%) rotate(-45deg);
         }
 
-        &.variant {
+        &.variation {
           filter: saturate(0.5);
 
           &::after {

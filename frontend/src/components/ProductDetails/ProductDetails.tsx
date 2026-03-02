@@ -1,29 +1,29 @@
 'use client'
 
 import { useState } from 'react'
-import { Colors, Size, Product, Variant, ClothingVariant, AccessoryVariant } from '@/lib/types'
+import { Colors, Size, Product, Variation, ClothingVariation, AccessoryVariation } from '@/lib/types'
 import styles from './ProductDetails.module.css'
 
 export default function ProductDetails({
   product,
-  variant,
+  variation,
   size,
-  onVariantChange,
+  onVariationChange,
   onSizeChange
 }: {
   product: Product
-  variant: Variant
+  variation: Variation
   size: Size | null
-  onVariantChange: (variant: Variant) => void
+  onVariationChange: (variation: Variation) => void
   onSizeChange: (size: Size) => void
 }) {
   const [shake, setShake] = useState<boolean>(false)
 
   const name = product.displayName
-  const price = variant.price.toFixed(2)
+  const price = variation.price.toFixed(2)
   const addToCardDisabled =
-    product.type === 'clothing' && (!variant || !size) ||
-    product.type === 'accessory' && !(variant as AccessoryVariant).inStock
+    product.type === 'clothing' && (!variation || !size) ||
+    product.type === 'accessory' && !(variation as AccessoryVariation).inStock
 
   function handleAddToCard() {
     if (addToCardDisabled) {
@@ -51,16 +51,16 @@ export default function ProductDetails({
           <div className={styles.option}>
             <h2>Select Colour</h2>
             <div className={styles.swatches}>
-              {product.variants.map(_variant => {
-                const { color } = _variant
+              {product.variations.map(_variation => {
+                const { color } = _variation
 
                 return (
                   <div
                     key={color}
-                    className={`${styles.swatch} ${styles.color} ${color === (variant as ClothingVariant).color ? styles.selected : ''}`}
+                    className={`${styles.swatch} ${styles.color} ${color === (variation as ClothingVariation).color ? styles.selected : ''}`}
                     style={{ background: Colors[color] }}
                     title={color}
-                    onClick={() => onVariantChange(_variant)}
+                    onClick={() => onVariationChange(_variation)}
                   />
                 )
               })}
@@ -69,7 +69,7 @@ export default function ProductDetails({
           <div className={styles.option}>
             <h2>Select Size</h2>
             <div className={styles.swatches}>
-              {Object.entries((variant as ClothingVariant).sizes).map(([_size, inStock]) => (
+              {Object.entries((variation as ClothingVariation).sizes).map(([_size, inStock]) => (
                 <div
                   key={_size}
                   className={`${styles.swatch} ${styles.size} ${_size === size ? styles.selected : ''} ${inStock ? '' : styles.outOfStock} ${shake ? styles.shake : ''}`}
@@ -87,14 +87,14 @@ export default function ProductDetails({
         <div className={styles.option}>
           <h2>Select Design</h2>
           <div className={styles.swatches}>
-            {product.variants.map(_variant => {
-              const { name, price, inStock } = _variant
+            {product.variations.map(_variation => {
+              const { name, price, inStock } = _variation
 
               return (
                 <div
                   key={name}
-                  className={`${styles.swatch} ${styles.design} ${name === (variant as AccessoryVariant).name ? styles.selected : ''} ${inStock ? '' : styles.outOfStock}`}
-                  onClick={() => onVariantChange(_variant)}
+                  className={`${styles.swatch} ${styles.design} ${name === (variation as AccessoryVariation).name ? styles.selected : ''} ${inStock ? '' : styles.outOfStock}`}
+                  onClick={() => onVariationChange(_variation)}
                 >
                   <p className={styles.name}>{name}</p>
                   <p className={styles.price}>${price.toFixed(2)}</p>

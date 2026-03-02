@@ -9,7 +9,7 @@ export const products: Product[] = [
     displayName: 'Our Brand New Letterman Jackets!',
     squareLink: 'https://square.link/u/BmQGH8Hn',
     type: 'clothing',
-    variants: [
+    variations: [
       {
         color: 'darkBlue',
         price: 80,
@@ -31,7 +31,7 @@ export const products: Product[] = [
     displayName: 'Classic Science UBC Hoodie',
     squareLink: 'https://square.link/u/7KUecbTU',
     type: 'clothing',
-    variants: [
+    variations: [
       {
         color: 'black',
         price: 40.50,
@@ -98,7 +98,7 @@ export const products: Product[] = [
     displayName: 'Classic Science UBC Crewnecks',
     squareLink: 'https://square.link/u/ZJ3dsVO6',
     type: 'clothing',
-    variants: [
+    variations: [
       {
         color: 'black',
         price: 35.50,
@@ -163,7 +163,7 @@ export const products: Product[] = [
     displayName: 'Our Brand New Quarter Zips!',
     squareLink: 'https://square.link/u/hmpALI2E',
     type: 'clothing',
-    variants: [
+    variations: [
       {
         color: 'darkBlue',
         price: 50,
@@ -182,7 +182,7 @@ export const products: Product[] = [
     displayName: 'Shorts',
     squareLink: 'https://square.link/u/J4oVswle',
     type: 'clothing',
-    variants: [
+    variations: [
       {
         color: 'white',
         price: 45,
@@ -203,7 +203,7 @@ export const products: Product[] = [
     squareLink: '',
     type: 'accessory',
     thumbnail: '/merch_photos/patches/departmental_patches/biol.png',
-    variants: [
+    variations: [
       {
         id: 'biol-patch',
         name: 'Biology Patch',
@@ -312,7 +312,7 @@ export const products: Product[] = [
     squareLink: '',
     type: 'accessory',
     thumbnail: '/merch_photos/patches/novelty_patches/cherry_blossom.png',
-    variants: [
+    variations: [
       {
         id: 'cherry-blossom-patch',
         name: 'Cherry Blossom Patch',
@@ -376,7 +376,7 @@ export const products: Product[] = [
     squareLink: '',
     type: 'accessory',
     thumbnail: '/merch_photos/patches/earned_patches/grad.png',
-    variants: [
+    variations: [
       {
         id: 'grad-patch',
         name: 'Grad Patch',

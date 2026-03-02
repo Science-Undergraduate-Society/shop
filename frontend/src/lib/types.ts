@@ -14,7 +14,7 @@ export type Size = 'XS' | 'S' | 'M' | 'L' | 'XL';
 
 export type Product = Clothing | Accessory
 
-export type Variant = ClothingVariant | AccessoryVariant
+export type Variation = ClothingVariation | AccessoryVariation
 
 export interface BaseProduct {
   id: string;
@@ -26,23 +26,23 @@ export interface BaseProduct {
 
 export interface Clothing extends BaseProduct {
   type: 'clothing';
-  variants: ClothingVariant[];
+  variations: ClothingVariation[];
 }
 
 export interface Accessory extends BaseProduct {
   type: 'accessory';
   thumbnail: string;
-  variants: AccessoryVariant[];
+  variations: AccessoryVariation[];
 }
 
-export interface ClothingVariant {
+export interface ClothingVariation {
   color: keyof typeof Colors
   price: number;
   images: string[];
   sizes: Partial<Record<Size, boolean>>; // True if in stock
 }
 
-export interface AccessoryVariant {
+export interface AccessoryVariation {
   id: string;
   name: string;
   price: number;

@@ -3,16 +3,16 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Colors, Product, Variant, ClothingVariant } from '@/lib/types'
+import { Colors, Product, Variation, ClothingVariation } from '@/lib/types'
 import styles from './ProductCard.module.css'
 
 export default function ProductCard({ product }: { product: Product }) {
-  const [variant, setVariant] = useState<Variant>(product.variants[0])
+  const [variation, setVariation] = useState<Variation>(product.variations[0])
 
   const link = `/product/${product.id}`
   const name = product.name
-  const price = variant.price.toFixed(2)
-  const thumbnail = product.type === 'clothing' ? variant.images[0] : product.thumbnail
+  const price = variation.price.toFixed(2)
+  const thumbnail = product.type === 'clothing' ? variation.images[0] : product.thumbnail
 
   function preventNavigation(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     event.preventDefault()
@@ -34,13 +34,13 @@ export default function ProductCard({ product }: { product: Product }) {
           className={styles.swatches}
           onClick={(event) => preventNavigation(event)}
         >
-          {product.type === 'clothing' && product.variants.map(({ color }) => (
+          {product.type === 'clothing' && product.variations.map(({ color }) => (
             <div
               key={color}
-              className={`${styles.swatch} ${color === (variant as ClothingVariant).color ? styles.selected : ''}`}
+              className={`${styles.swatch} ${color === (variation as ClothingVariation).color ? styles.selected : ''}`}
               style={{ background: Colors[color] }}
               title={color}
-              onClick={() => setVariant(product.variants.find(variant => variant.color === color)!)}
+              onClick={() => setVariation(product.variations.find(variation => variation.color === color)!)}
             />
           ))}
         </div>
