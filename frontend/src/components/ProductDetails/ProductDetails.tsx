@@ -21,12 +21,12 @@ export default function ProductDetails({
 
   const name = product.displayName
   const price = variation.price.toFixed(2)
-  const addToCardDisabled =
+  const addToCartDisabled =
     product.type === 'clothing' && (!variation || !size) ||
     product.type === 'accessory' && !(variation as AccessoryVariation).inStock
 
   function handleAddToCard() {
-    if (addToCardDisabled) {
+    if (addToCartDisabled) {
       setShake(true)
       setTimeout(() => setShake(false), 500)
       return
@@ -105,7 +105,7 @@ export default function ProductDetails({
         </div>
       )}
       <button
-        className={`${styles.addToCart} ${addToCardDisabled ? styles.disabled : ''}`}
+        className={`${styles.addToCart} ${addToCartDisabled ? styles.disabled : ''}`}
         onClick={handleAddToCard}
       >
         {/* Add To Cart */}
