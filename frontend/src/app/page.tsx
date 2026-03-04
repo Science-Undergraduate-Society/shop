@@ -1,7 +1,7 @@
 import { products } from '@/data/products'
+import Notice from '@/components/Notice/Notice'
 import ProductCard from '@/components/ProductCard/ProductCard'
 import styles from './page.module.css'
-import { Notice } from '@/components/Notice/Notice'
 
 export default function Home() {
   return (

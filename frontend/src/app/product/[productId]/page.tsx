@@ -3,10 +3,10 @@
 import { use, useState } from 'react'
 import { products } from '@/data/products'
 import { Size, Variation } from '@/lib/types'
+import Notice from '@/components/Notice/Notice'
 import ProductGallery from '@/components/ProductGallery/ProductGallery'
 import ProductDetails from '@/components/ProductDetails/ProductDetails'
 import ProductCarousel from '@/components/ProductCarousel/ProductCarousel'
-import { Notice } from '@/components/Notice/Notice'
 import styles from './product.module.css'
 
 const SIZE_GUIDE = '/merch_photos/size_guide.png'
