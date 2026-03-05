@@ -121,7 +121,7 @@
 
           &::after {
             width: 115%;
-            background: #d9d9d9;
+            background: currentColor;
           }
         }
 

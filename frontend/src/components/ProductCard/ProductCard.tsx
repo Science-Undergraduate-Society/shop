@@ -20,10 +20,7 @@ export default function ProductCard({ product }: { product: Product }) {
   }
 
   return (
-    <Link
-      href={link}
-      className={styles.productCard}
-    >
+    <Link href={link} className={styles.productCard}>
       <div className={styles.thumbnail}>
         {product.new && <div className={styles.new}>New</div>}
         <Image src={thumbnail} alt={thumbnail} fill draggable="false" />

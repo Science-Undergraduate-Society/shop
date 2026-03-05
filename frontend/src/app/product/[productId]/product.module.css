@@ -7,7 +7,7 @@
 
 .breadcrumb {
   color: var(--color-ui-60);
-  margin-bottom: 24px;
+  margin-top: 32px;
   text-transform: capitalize;
   user-select: none;
   align-self: flex-start;
