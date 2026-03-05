@@ -56,10 +56,10 @@ export default function Product({ params }: { params: Promise<{ productId: strin
   return (
     <main className={styles.product}>
       <div>
+        <Notice />
         <div className={styles.breadcrumb}>
           <p>{breadcrumb}</p>
         </div>
-        <Notice />
         <div className={styles.overview}>
           <ProductGallery
             image={image}
