@@ -104,13 +104,12 @@ export default function CheckoutPayment({
       }
 
       const sourceId = result.token
-      const amount = Math.round(cartSubtotal * 100) // cents
 
-      // Send to our API route
+      // Send cart items to the API — the server creates the Square Order and pays it
       const response = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ sourceId, name, email, amount }),
+        body: JSON.stringify({ sourceId, name, email, cartItems }),
       })
 
       const data = await response.json()
@@ -122,12 +121,14 @@ export default function CheckoutPayment({
       }
 
       // Store order info for the confirmation page
+      // Use the server-calculated total (cents → dollars) so it matches what Square charged
       sessionStorage.setItem('order', JSON.stringify({
         paymentId: data.paymentId,
+        orderId: data.orderId,
         email,
         name,
         cartItems,
-        total: cartSubtotal,
+        total: data.total / 100,
         cardLast4: data.cardLast4,
       }))
 
