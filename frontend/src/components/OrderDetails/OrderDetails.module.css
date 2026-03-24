@@ -1,0 +1,126 @@
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: fit-content;
+  gap: 32px;
+  padding: 32px;
+  background: var(--color-ui-10);
+  border-radius: 20px;
+
+  h1 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+  }
+
+  hr {
+    border: 0.5px solid var(--color-ui-30);
+    border-radius: 1px;
+  }
+
+  .headers,
+  .pickupDetails {
+    display: grid;
+    grid-template-columns: 22.5% 37.5% 20% 20%;
+    padding: 12px 0;
+    align-items: center;
+  }
+
+  .headers {
+    border-bottom: 1px solid var(--color-ui-30);
+    font-size: var(--font-size-md);
+    font-weight: bold;
+    color: var(--color-ui-80);
+  }
+
+  .pickupNote {
+    padding: 16px;
+    margin-top: 16px;
+    background: color-mix(in srgb, var(--color-ui-60), var(--color-ui-10) 90%);
+    border-left: 4px solid var(--color-ui-60);
+    border-radius: 12px;
+    font-weight: bold;
+    color: var(--color-ui-60);
+  }
+
+  .whatToBring {
+    padding: 16px;
+    background: color-mix(in srgb, #4caf50, var(--color-ui-10) 90%);
+    border-left: 4px solid #4caf50;
+    border-radius: 12px;
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: var(--font-size-lg);
+      font-weight: bold;
+      color: #4caf50;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-weight: bold;
+      color: var(--color-ui-80);
+      list-style: none;
+    }
+
+    li::before {
+      content: "✓";
+      margin-right: 8px;
+      color: var(--color-ui-60);
+    }
+  }
+
+  .invoiceDetails {
+    .amount {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .total {
+      margin-top: 16px;
+      font-size: 24px;
+    }
+  }
+
+  .paymentMethod {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    img {
+      width: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .orderDetails {
+    width: 100%;
+
+    .headers {
+      display: none;
+    }
+
+    .pickupDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: baseline;
+
+      span {
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+          content: attr(data-label);
+          margin-bottom: 4px;
+          font-size: var(--font-size-md);
+          font-weight: bold;
+          color: var(--color-ui-60);
+        }
+      }
+    }
+  }
+}
