@@ -1,8 +1,14 @@
-'use client'
-
-import { useState } from 'react'
-import { Colors, Size, Product, Variation, ClothingVariation, AccessoryVariation } from '@/lib/types'
-import styles from './ProductDetails.module.css'
+import type {
+  ProductEnriched,
+  VariationEnriched,
+  ClothingEnriched,
+  ClothingVariationEnriched,
+  AccessoryEnriched,
+  AccessoryVariationEnriched,
+} from '@/lib/types'
+import { Size } from '@/lib/types'
+import ClothingDetails from './ClothingDetails'
+import AccessoryDetails from './AccessoryDetails'
 
 export default function ProductDetails({
   product,
@@ -11,106 +17,33 @@ export default function ProductDetails({
   onVariationChange,
   onSizeChange
 }: {
-  product: Product
-  variation: Variation
+  product: ProductEnriched
+  variation: VariationEnriched
   size: Size | null
-  onVariationChange: (variation: Variation) => void
+  onVariationChange: (variation: VariationEnriched) => void
   onSizeChange: (size: Size) => void
 }) {
-  const [shake, setShake] = useState<boolean>(false)
-
-  const name = product.displayName
-  const price = variation.price.toFixed(2)
-  const addToCartDisabled =
-    product.type === 'clothing' && (!variation || !size) ||
-    product.type === 'accessory' && !(variation as AccessoryVariation).inStock
-
-  function handleAddToCard() {
-    if (addToCartDisabled) {
-      setShake(true)
-      setTimeout(() => setShake(false), 500)
-      return
-    }
-
-    const squareLink = product.squareLink
-
-    if (squareLink) {
-      window.open(squareLink, '_blank')
-    }
+  if (product.type === 'clothing') {
+    return (
+      <ClothingDetails
+        product={product as ClothingEnriched}
+        variation={variation as ClothingVariationEnriched}
+        size={size}
+        onVariationChange={onVariationChange}
+        onSizeChange={onSizeChange}
+      />
+    )
   }
 
-  return (
-    <div className={styles.productDetails}>
-      <div className={styles.header}>
-        <h1 className={styles.name}>{name}</h1>
-        <p className={styles.price}>${price} CAD <b className={styles.tax}>(tax included)</b></p>
-        {/* <p className={styles.stock}>_ in stock</p> */}
-      </div>
-      {product.type === 'clothing' && (
-        <>
-          <div className={styles.option}>
-            <h2>Select Colour</h2>
-            <div className={styles.swatches}>
-              {product.variations.map(_variation => {
-                const { color } = _variation
+  if (product.type === 'accessory') {
+    return (
+      <AccessoryDetails
+        product={product as AccessoryEnriched}
+        variation={variation as AccessoryVariationEnriched}
+        onVariationChange={onVariationChange}
+      />
+    )
+  }
 
-                return (
-                  <div
-                    key={color}
-                    className={`${styles.swatch} ${styles.color} ${color === (variation as ClothingVariation).color ? styles.selected : ''}`}
-                    style={{ background: Colors[color] }}
-                    title={color}
-                    onClick={() => onVariationChange(_variation)}
-                  />
-                )
-              })}
-            </div>
-          </div>
-          <div className={styles.option}>
-            <h2>Select Size</h2>
-            <div className={styles.swatches}>
-              {Object.entries((variation as ClothingVariation).sizes).map(([_size, inStock]) => (
-                <div
-                  key={_size}
-                  className={`${styles.swatch} ${styles.size} ${_size === size ? styles.selected : ''} ${inStock ? '' : styles.outOfStock} ${shake ? styles.shake : ''}`}
-                  title={_size}
-                  onClick={() => inStock && onSizeChange(_size as Size)}
-                >
-                  {_size}
-                </div>
-              ))}
-            </div>
-          </div>
-        </>
-      )}
-      {product.type === 'accessory' && (
-        <div className={styles.option}>
-          <h2>Select Design</h2>
-          <div className={styles.swatches}>
-            {product.variations.map(_variation => {
-              const { name, price, inStock } = _variation
-
-              return (
-                <div
-                  key={name}
-                  className={`${styles.swatch} ${styles.design} ${name === (variation as AccessoryVariation).name ? styles.selected : ''} ${inStock ? '' : styles.outOfStock}`}
-                  onClick={() => onVariationChange(_variation)}
-                >
-                  <p className={styles.name}>{name}</p>
-                  <p className={styles.price}>${price.toFixed(2)}</p>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      )}
-      <button
-        className={`${styles.addToCart} ${addToCartDisabled ? styles.disabled : ''}`}
-        onClick={handleAddToCard}
-      >
-        {/* Add To Cart */}
-        Buy
-      </button>
-    </div>
-  )
+  return null
 }

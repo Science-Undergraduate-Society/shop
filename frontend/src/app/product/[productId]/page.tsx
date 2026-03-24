@@ -1,28 +1,13 @@
-'use client'
-
-import { use, useState } from 'react'
-import { products } from '@/data/products'
-import { Size, Variation } from '@/lib/types'
+import { getProducts } from '@/lib/getProducts'
 import Notice from '@/components/Notice/Notice'
-import ProductGallery from '@/components/ProductGallery/ProductGallery'
-import ProductDetails from '@/components/ProductDetails/ProductDetails'
+import ProductView from '@/components/ProductView/ProductView'
 import ProductCarousel from '@/components/ProductCarousel/ProductCarousel'
 import styles from './product.module.css'
 
-const SIZE_GUIDE = '/merch_photos/size_guide.png'
-const SIZE_GUIDE_INCLUDE_LIST = [
-  'hoodies',
-  'crewnecks'
-]
-
-export default function Product({ params }: { params: Promise<{ productId: string }> }) {
-  const { productId } = use(params)
+export default async function Product({ params }: { params: Promise<{ productId: string }> }) {
+  const { productId } = await params
+  const products = await getProducts()
   const product = products.find(product => product.id === productId)
-
-  // Initialize hooks before conditional returns
-  const [variation, setVariation] = useState<Variation>(product?.variations[0] || {} as Variation)
-  const [image, setImage] = useState<string>(product?.variations[0]?.images[0] || '')
-  const [size, setSize] = useState<Size | null>(null)
 
   if (!product) {
     return (
@@ -38,45 +23,15 @@ export default function Product({ params }: { params: Promise<{ productId: strin
     product.displayName
   ].join(' > ')
 
-  const thumbnails = [
-    ...variation.images,
-    ...(product.type === 'clothing' && SIZE_GUIDE_INCLUDE_LIST.includes(product.id) ? [SIZE_GUIDE] : [])
-  ]
-
-  function updateVariation(newVariation: Variation) {
-    if (variation === newVariation) {
-      return
-    }
-
-    setVariation(newVariation)
-    setImage(newVariation.images[0])
-    setSize(null)
-  }
-
   return (
     <main className={styles.product}>
       <div>
         <Notice />
-        <div className={styles.breadcrumb}>
-          <p>{breadcrumb}</p>
-        </div>
-        <div className={styles.overview}>
-          <ProductGallery
-            image={image}
-            thumbnails={thumbnails}
-            onSelect={setImage}
-          />
-          <ProductDetails
-            product={product}
-            variation={variation}
-            size={size}
-            onVariationChange={updateVariation}
-            onSizeChange={setSize}
-          />
-        </div>
+        <p className={styles.breadcrumb}>{breadcrumb}</p>
+        <ProductView product={product} />
         <h2 className={styles.viewMoreMerch}>View More Merch</h2>
       </div>
-      <ProductCarousel product={product} />
+      <ProductCarousel productId={productId} />
     </main>
   )
 }
