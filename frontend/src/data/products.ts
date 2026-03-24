@@ -7,12 +7,11 @@ export const products: Product[] = [
     id: 'letterman',
     name: 'Letterman Jacket',
     displayName: 'Our Brand New Letterman Jackets!',
-    squareLink: 'https://square.link/u/BmQGH8Hn',
+    squareId: 'QHHDBDKNSO2IAQ3LATLVMMUE',
     type: 'clothing',
     variations: [
       {
         color: 'darkBlue',
-        price: 80,
         images: [
           '/merch_photos/letterman/letterman1.JPG',
           '/merch_photos/letterman/letterman2.JPG',
@@ -20,7 +19,12 @@ export const products: Product[] = [
           '/merch_photos/letterman/letterman4.JPG',
           '/merch_photos/letterman/letterman5.JPG'
         ],
-        sizes: { S: false, M: false, L: true, XL: true }
+        sizes: {
+          S: { squareId: 'AB2EF3CXI374ASI43TQYQULE' },
+          M: { squareId: 'TEP7FO6YI5K56EHQHXJQY74A' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       }
     ],
     new: true
@@ -29,33 +33,45 @@ export const products: Product[] = [
     id: 'hoodies',
     name: 'Hoodies',
     displayName: 'Classic Science UBC Hoodie',
-    squareLink: 'https://square.link/u/7KUecbTU',
+    squareId: 'MIIU73QFMT263BA2Q4AOXQJC',
     type: 'clothing',
     variations: [
       {
         color: 'black',
-        price: 40.50,
         images: [
           '/merch_photos/hoodies/black-hoodie.png'
         ],
-        sizes: { S: true, M: false, L: false, XL: false }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: 'TJK44NU2IJ6YXQOY2KWID6M6' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       {
         color: 'white',
-        price: 40.50,
         images: [
           '/merch_photos/hoodies/white-hoodie.png'
         ],
-        sizes: { S: true, M: false, L: true, XL: true }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       {
         color: 'greyYellow',
-        price: 40.50,
         images: [
           '/merch_photos/hoodies/grey-hoodie.png',
           '/merch_photos/hoodies/hoodie-grey-spotlight.jpeg'
         ],
-        sizes: { S: true, M: false, L: false, XL: false }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       // {
       //   color: 'greyWhite',
@@ -68,11 +84,15 @@ export const products: Product[] = [
       // },
       {
         color: 'lightBlue',
-        price: 40.50,
         images: [
           '/merch_photos/hoodies/blue-hoodie.png'
         ],
-        sizes: { S: false, M: false, L: true, XL: true }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       // {
       //   color: 'sand',
@@ -96,56 +116,80 @@ export const products: Product[] = [
     id: 'crewnecks',
     name: 'Crewnecks',
     displayName: 'Classic Science UBC Crewnecks',
-    squareLink: 'https://square.link/u/ZJ3dsVO6',
+    squareId: '',
     type: 'clothing',
     variations: [
       {
         color: 'black',
-        price: 35.50,
         images: [
           '/merch_photos/crewnecks/black-crew.png'
         ],
-        sizes: { S: false, M: false, L: true, XL: true }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       {
         color: 'white',
-        price: 35.50,
         images: [
           PLACEHOLDER_IMAGE
         ],
-        sizes: { S: true, M: true, L: true, XL: true }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       {
         color: 'greyYellow',
-        price: 35.50,
         images: [
           '/merch_photos/crewnecks/grey-crew.png'
         ],
-        sizes: { S: true, M: false, L: true, XL: true }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       {
         color: 'greyWhite',
-        price: 35.50,
         images: [
           '/merch_photos/crewnecks/grey-crew.png'
         ],
-        sizes: { S: false, M: false, L: false, XL: true }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       {
         color: 'lightBlue',
-        price: 35.50,
         images: [
           '/merch_photos/crewnecks/blue-crew.png'
         ],
-        sizes: { S: false, M: false, L: true, XL: true }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       {
         color: 'sand',
-        price: 35.50,
         images: [
           '/merch_photos/crewnecks/sand-crew.png'
         ],
-        sizes: { S: false, M: false, L: false, XL: true }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       },
       // {
       //   color: 'pink',
@@ -161,18 +205,22 @@ export const products: Product[] = [
     id: 'quarter-zips',
     name: 'Quarter-Zips',
     displayName: 'Our Brand New Quarter Zips!',
-    squareLink: 'https://square.link/u/hmpALI2E',
+    squareId: '',
     type: 'clothing',
     variations: [
       {
         color: 'darkBlue',
-        price: 50,
         images: [
           '/merch_photos/quarter_zips/quarter1.JPG',
           '/merch_photos/quarter_zips/quarter2.JPG',
           '/merch_photos/quarter_zips/quarter3.JPG'
         ],
-        sizes: { S: true, M: true, L: true, XL: true }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       }
     ]
   },
@@ -180,19 +228,23 @@ export const products: Product[] = [
     id: 'shorts',
     name: 'Shorts',
     displayName: 'Shorts',
-    squareLink: 'https://square.link/u/J4oVswle',
+    squareId: '',
     type: 'clothing',
     variations: [
       {
         color: 'white',
-        price: 45,
         images: [
           '/merch_photos/shorts/shorts-grass.jpeg',
           '/merch_photos/shorts/shorts-group.jpeg',
           '/merch_photos/shorts/shorts-m.jpeg',
           '/merch_photos/shorts/shorts-f.jpeg'
         ],
-        sizes: { S: true, M: true, L: true, XL: false }
+        sizes: {
+          S: { squareId: '' },
+          M: { squareId: '' },
+          L: { squareId: '' },
+          XL: { squareId: '' }
+        }
       }
     ]
   },
@@ -200,15 +252,14 @@ export const products: Product[] = [
     id: 'departmental-patches',
     name: 'Departmental Patches',
     displayName: 'Departmental Patches',
-    squareLink: '',
+    squareId: '',
     type: 'accessory',
     thumbnail: '/merch_photos/patches/departmental_patches/biol.png',
     variations: [
       {
         id: 'biol-patch',
         name: 'Biology Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           '/merch_photos/patches/departmental_patches/biol.png'
         ]
@@ -216,8 +267,7 @@ export const products: Product[] = [
       {
         id: 'astr-patch',
         name: 'Astronomy Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -225,8 +275,7 @@ export const products: Product[] = [
       {
         id: 'bota-patch',
         name: 'Botany Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -234,8 +283,7 @@ export const products: Product[] = [
       {
         id: 'caps-patch',
         name: 'Cellular, Anatomical, and Physiological Science Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           '/merch_photos/patches/departmental_patches/CAPS.png'
         ]
@@ -243,8 +291,7 @@ export const products: Product[] = [
       {
         id: 'chem-patch',
         name: 'Chemistry Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -252,8 +299,7 @@ export const products: Product[] = [
       {
         id: 'cs-patch',
         name: 'Computer Science Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           '/merch_photos/patches/departmental_patches/cpsc.png'
         ]
@@ -261,8 +307,7 @@ export const products: Product[] = [
       {
         id: 'eosc-patch',
         name: 'Earth and Ocean Science Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           '/merch_photos/patches/departmental_patches/eosc.png'
         ]
@@ -270,8 +315,7 @@ export const products: Product[] = [
       {
         id: 'math-patch',
         name: 'Math Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -279,8 +323,7 @@ export const products: Product[] = [
       {
         id: 'micb-patch',
         name: 'Microbiology and Immunology Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -288,8 +331,7 @@ export const products: Product[] = [
       {
         id: 'nsci-patch',
         name: 'Neuroscience Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -297,8 +339,7 @@ export const products: Product[] = [
       {
         id: 'phys-patch',
         name: 'Physics Patch',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -309,15 +350,14 @@ export const products: Product[] = [
     id: 'novelty-patches',
     name: 'Novelty Patches',
     displayName: 'Novelty Patches',
-    squareLink: '',
+    squareId: '',
     type: 'accessory',
     thumbnail: '/merch_photos/patches/novelty_patches/cherry_blossom.png',
     variations: [
       {
         id: 'cherry-blossom-patch',
         name: 'Cherry Blossom Patch',
-        price: 3.50,
-        inStock: false,
+        squareId: '',
         images: [
           '/merch_photos/patches/novelty_patches/cherry_blossom.png'
         ]
@@ -325,8 +365,7 @@ export const products: Product[] = [
       {
         id: 'coffee-patch',
         name: 'Coffee Patch',
-        price: 3.50,
-        inStock: false,
+        squareId: '',
         images: [
           '/merch_photos/patches/novelty_patches/coffee.png'
         ]
@@ -334,8 +373,7 @@ export const products: Product[] = [
       {
         id: 'mountain-patch',
         name: 'Mountain Patch',
-        price: 3.50,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -343,8 +381,7 @@ export const products: Product[] = [
       {
         id: 'rose-garden-patch',
         name: 'Rose Garden Patch',
-        price: 3.50,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -352,8 +389,7 @@ export const products: Product[] = [
       {
         id: 'sus-patch-blue',
         name: 'SUS Patch Blue',
-        price: 3,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -361,8 +397,7 @@ export const products: Product[] = [
       {
         id: 'sus-patch-gold',
         name: 'SUS Patch Gold',
-        price: 4,
-        inStock: false,
+        squareId: '',
         images: [
           PLACEHOLDER_IMAGE
         ]
@@ -373,15 +408,14 @@ export const products: Product[] = [
     id: 'earned-patches',
     name: 'Earned Patches',
     displayName: 'Earned Patches',
-    squareLink: '',
+    squareId: '',
     type: 'accessory',
     thumbnail: '/merch_photos/patches/earned_patches/grad.png',
     variations: [
       {
         id: 'grad-patch',
         name: 'Grad Patch',
-        price: 3.50,
-        inStock: false,
+        squareId: '',
         images: [
           '/merch_photos/patches/earned_patches/grad.png'
         ]
