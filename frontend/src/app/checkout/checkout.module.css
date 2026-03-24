@@ -1,0 +1,23 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  padding: 130px clamp(30px, 6vw, 130px) 160px;
+
+  .header {
+    margin-bottom: 24px;
+    font-size: var(--font-size-xl);
+    color: var(--color-ui-80);
+  }
+
+  .overview {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout {
+    .overview {
+      flex-direction: column-reverse;
+    }
+  }
+}
