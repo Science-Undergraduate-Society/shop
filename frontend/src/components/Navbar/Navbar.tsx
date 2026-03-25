@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <Link href="/" className={styles.logo}>
-        <Image src="/sus-logo.svg" alt="SUS Logo" fill draggable="false" />
+        <Image src="/sus-logo-white.svg" alt="SUS Logo" fill draggable="false" />
       </Link>
       <div className={styles.links}>
         <Link href="/">Shop</Link>
