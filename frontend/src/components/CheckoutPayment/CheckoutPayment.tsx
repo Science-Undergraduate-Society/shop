@@ -86,7 +86,14 @@ export default function CheckoutPayment({
 
     async function initCard() {
       try {
-        const payments = window.Square.payments(squareApplicationId, squareLocationId)
+        const squareSdk = window.Square
+
+        if (!squareSdk) {
+          setError('Payment SDK is unavailable. Please refresh and try again.')
+          return
+        }
+
+        const payments = squareSdk.payments(squareApplicationId, squareLocationId)
         const card = await payments.card()
         await card.attach('#card-container')
         cardRef.current = card
