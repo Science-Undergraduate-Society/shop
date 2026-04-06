@@ -117,6 +117,11 @@ export default function ProductDetails({
       >
         {storePaused ? 'Temporarily Closed' : 'Buy'}
       </button>
+      {storePaused && (
+        <p className={styles.purchasePauseNotice}>
+          Purchases are unavailable right now while our merch store transitions for Summer 2026.
+        </p>
+      )}
     </div>
   )
 }

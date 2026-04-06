@@ -8,11 +8,11 @@ export default function Notice() {
     return (
       <div className={styles.container}>
         <p className={styles.transitionInfo}>
-          <strong>STORE TEMPORARILY CLOSED:</strong> Our merch store is paused for a transition period during <strong>{TRANSITION_PERIOD_LABEL}</strong>.
+          <strong>STORE TEMPORARILY CLOSED:</strong> Purchases are paused while we complete a store transition for <strong>{TRANSITION_PERIOD_LABEL}</strong>.
           <br /><br />
-          Browsing is still available, but checkout is currently disabled and no orders can be placed.
+          You can still browse all items, but checkout is disabled so no orders can be placed right now.
           <br /><br />
-          Questions? Contact <a href="mailto:sales@sus.ubc.ca">sales@sus.ubc.ca</a>.
+          We plan to reopen ordering after the transition period. Questions? Contact <a href="mailto:sales@sus.ubc.ca">sales@sus.ubc.ca</a>.
         </p>
       </div>
     )
