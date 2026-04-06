@@ -1,5 +1,5 @@
 // Set to true if you need to pause checkout
-const FORCE_STORE_PAUSE = true
+const FORCE_STORE_PAUSE = false
 
 export function isStorePaused(): boolean {
     return FORCE_STORE_PAUSE
