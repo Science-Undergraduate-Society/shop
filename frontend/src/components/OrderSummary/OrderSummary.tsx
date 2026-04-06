@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import ItemSummary from '../ItemSummary/ItemSummary'
 import styles from './OrderSummary.module.css'
 
@@ -27,7 +28,7 @@ export default function OrderSummary() {
         <ItemSummary />
       </div>
       <div className={styles.email}>
-        <img src="/icons/email.svg" alt="Email" draggable="false" />
+        <Image src="/icons/email.svg" alt="Email" width={50} height={50} draggable="false" />
         <p>A confirmation email has been sent to your inbox: </p>
         <b>{email}</b>
       </div>

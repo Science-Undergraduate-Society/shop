@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import styles from './OrderDetails.module.css'
 
 interface Order {
@@ -73,7 +74,7 @@ export default function OrderDetails() {
         </div>
       </div>
       <div className={styles.paymentMethod}>
-        <img src="/icons/credit-card.svg" alt="Payment Method" draggable="false" />
+        <Image src="/icons/credit-card.svg" alt="Payment Method" width={60} height={60} draggable="false" />
         {order?.cardLast4
           ? <p>Paid by card ending in {order.cardLast4}</p>
           : <p>Paid by card</p>

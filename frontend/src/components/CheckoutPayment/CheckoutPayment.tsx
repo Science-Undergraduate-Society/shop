@@ -5,9 +5,32 @@ import { useRouter } from 'next/navigation'
 import { useCart } from '@/lib/CartContext'
 import styles from './CheckoutPayment.module.css'
 
+interface SquareTokenizeError {
+  message: string
+}
+
+interface SquareTokenizeResult {
+  status: string
+  token?: string
+  errors?: SquareTokenizeError[]
+}
+
+interface SquareCard {
+  attach: (selector: string) => Promise<void>
+  tokenize: () => Promise<SquareTokenizeResult>
+}
+
+interface SquarePayments {
+  card: () => Promise<SquareCard>
+}
+
+interface SquareSDK {
+  payments: (applicationId: string, locationId: string) => SquarePayments
+}
+
 declare global {
   interface Window {
-    Square?: any
+    Square?: SquareSDK
   }
 }
 
@@ -29,7 +52,7 @@ export default function CheckoutPayment({
   const router = useRouter()
   const { cartItems, cartSubtotal, isCartEmpty } = useCart()
 
-  const cardRef = useRef<any>(null)
+  const cardRef = useRef<SquareCard | null>(null)
 
   // Initialize Square Web Payments SDK script
   useEffect(() => {
@@ -96,7 +119,7 @@ export default function CheckoutPayment({
       // Tokenize the card
       const result = await cardRef.current.tokenize()
 
-      if (result.status !== 'OK') {
+      if (result.status !== 'OK' || !result.token) {
         const errorMessages = result.errors?.map((err: { message: string }) => err.message).join(', ')
         setError(errorMessages ?? 'Card tokenization failed. Please check your card details.')
         setLoading(false)

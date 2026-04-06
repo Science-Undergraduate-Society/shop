@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { getProducts } from '@/lib/getProducts'
 import Notice from '@/components/Notice/Notice'
 import ProductCard from '@/components/ProductCard/ProductCard'
@@ -9,7 +10,7 @@ export default async function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.banner}>
-        <img src="/banner.svg" alt="Shop Banner" draggable="false" />
+        <Image src="/banner.svg" alt="Shop Banner" width={1440} height={360} draggable="false" />
       </div>
       <Notice />
       <h1 className={styles.category}>All Merch</h1>
