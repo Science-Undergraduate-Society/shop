@@ -35,3 +35,35 @@ Ready for Pickup
 Completed
 Customer Notifications - Automatic SMS/email when order is ready
 Pickup Scheduling - Customers can select pickup time windows
+
+# Store Status
+
+This section explains how the temporary store pause works.
+
+## Current Behavior
+
+- Store purchasing is controlled by `FORCE_STORE_PAUSE` in `src/lib/storeStatus.ts`.
+- `TRANSITION_PERIOD_LABEL` is set to `Summer 2026` and is used for customer-facing messaging.
+
+## What Happens When Paused
+
+When `FORCE_STORE_PAUSE` is `true`:
+
+- Product buy button is disabled and shown as "Temporarily Closed".
+- A notice appears under the buy button explaining purchases are paused.
+- The site-wide notice is replaced with the transition message.
+- Product browsing remains available.
+
+## How To Toggle
+
+1. Open `src/lib/storeStatus.ts`.
+2. Set `FORCE_STORE_PAUSE` to:
+- `true` to pause purchases.
+- `false` to allow purchases.
+
+## Related Files
+
+- `src/lib/storeStatus.ts`
+- `src/components/Notice/Notice.tsx`
+- `src/components/ProductDetails/ProductDetails.tsx`
+
