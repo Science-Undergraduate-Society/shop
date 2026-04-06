@@ -1,0 +1,41 @@
+.itemSummary {
+  .item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: var(--font-size-md);
+      font-weight: bold;
+      color: var(--color-ui-80);
+    }
+
+    b {
+      font-weight: 600;
+    }
+
+    .image {
+      position: relative;
+      width: 100px;
+      height: 100px;
+
+      img {
+        border-radius: var(--border-radius-lg);
+        object-fit: cover;
+        object-position: 50% 15%;
+      }
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .subtotal {
+        margin-left: auto;
+      }
+    }
+  }
+}

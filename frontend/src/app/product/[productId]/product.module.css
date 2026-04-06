@@ -13,14 +13,6 @@
   align-self: flex-start;
 }
 
-.overview {
-  margin-top: 36px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(20px, 6vw, 60px);
-  justify-content: center;
-}
-
 .viewMoreMerch {
   margin: 80px 0 25.6px;
 }

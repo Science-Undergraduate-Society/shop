@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Figtree } from 'next/font/google'
+import { CartProvider } from '@/lib/CartContext'
 import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
 import './globals.css'
@@ -26,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${figtree.variable} ${figtree.variable}`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

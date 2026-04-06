@@ -1,10 +1,10 @@
-import { products } from '@/data/products'
-import { Product } from '@/lib/types'
+import { getProducts } from '@/lib/getProducts'
 import ProductCard from '@/components/ProductCard/ProductCard'
 import styles from './ProductCarousel.module.css'
 
-export default function ProductCarousel({ product }: { product: Product }) {
-  const remainingProducts = products.filter(_product => _product.id !== product.id)
+export default async function ProductCarousel({ productId }: { productId: string }) {
+  const products = await getProducts()
+  const remainingProducts = products.filter(_product => _product.id !== productId)
   const productList = [...remainingProducts, ...remainingProducts]
 
   return (

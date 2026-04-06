@@ -1,331 +1,64 @@
-.pageWrapper {
+.orderConfirmed {
+  background: color-mix(in srgb, var(--color-ui-10), var(--color-ui-30) 50%);
+
+  .overview {
+    display: flex;
+    gap: 32px;
+    padding: 0 32px;
+    transform: translateY(-32px);
+  }
+}
+
+.banner {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background-color: #F5F5F5;
-  font-family: Figtree, sans-serif;
-}
-
-.container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  gap: 8px;
+  padding: 150px 0 80px;
+  background: var(--color-ui-80);
+  color: var(--color-ui-10);
+  overflow: hidden;
   align-items: center;
-  padding: 32px 16px;
-  max-width: 640px;
-  margin: 0 auto;
-  margin-top: 64px;
-  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+      linear-gradient(-121deg, rgba(1, 115, 190, 0.70) 0%, rgba(1, 115, 190, 0.00) 500px),
+      linear-gradient(59deg, rgba(1, 115, 190, 0.70) 0%, rgba(1, 115, 190, 0.00) 500px);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+    z-index: 0;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  img {
+    width: 75px;
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: var(--font-size-md);
+    font-weight: normal;
+  }
 }
 
-/* Boxes */
-.verificationBox,
-.bookingBox,
-.confirmationBox,
-.errorBox {
-  background: white;
-  border-radius: 16px;
-  padding: 38.4px;
-  box-shadow: 0 3.2px 16px rgba(0, 0, 0, 0.08);
-  width: 100%;
-}
-
-.verificationBox h1,
-.bookingBox h1,
-.confirmationBox h1,
-.errorBox h1 {
-  font-size: 25.6px;
-  font-weight: 700;
-  margin-bottom: 12.8px;
-  color: #222755;
-  text-align: center;
-}
-
-.orderInfo {
-  text-align: center;
-  font-size: 12.8px;
-  color: #666;
-  margin-bottom: 25.6px;
-  padding: 9.6px;
-  background: #F0F7FF;
-  border-radius: 6.4px;
-  font-family: monospace;
-}
-
-/* Verification Section */
-.verificationSection {
-  margin-top: 25.6px;
-}
-
-.verificationSection h2 {
-  font-size: 19.2px;
-  font-weight: 600;
-  margin-bottom: 9.6px;
-  color: #1a1a1a;
-}
-
-.verificationSection p {
-  color: #666;
-  margin-bottom: 16px;
-}
-
-.input {
-  width: 100%;
-  padding: 12.8px;
-  font-size: 14.4px;
-  border: 2px solid #E0E0E0;
-  border-radius: 9.6px;
-  margin-bottom: 16px;
-  font-family: monospace;
-  text-align: center;
-  letter-spacing: 3.2px;
-  transition: border-color 0.2s;
-}
-
-.input:focus {
-  outline: none;
-  border-color: #0173BE;
-}
-
-.helperText {
-  font-size: 11.2px;
-  color: #999;
-  text-align: center;
-  margin-top: 9.6px;
-}
-
-/* Pickup Section */
-.pickupSection {
-  margin-top: 19.2px;
-}
-
-.pickupSection h2 {
-  font-size: 19.2px;
-  font-weight: 600;
-  margin-bottom: 6.4px;
-  color: #1a1a1a;
-}
-
-.subtitle {
-  color: #666;
-  margin-bottom: 19.2px;
-}
-
-.formGroup {
-  margin-bottom: 19.2px;
-}
-
-.formGroup label {
-  display: block;
-  font-size: 12.8px;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 6.4px;
-}
-
-.select {
-  width: 100%;
-  padding: 11.2px;
-  font-size: 12.8px;
-  border: 2px solid #E0E0E0;
-  border-radius: 9.6px;
-  background: white;
-  cursor: pointer;
-  transition: border-color 0.2s;
-  font-family: Figtree, sans-serif;
-}
-
-.select:hover {
-  border-color: #0173BE;
-}
-
-.select:focus {
-  outline: none;
-  border-color: #0173BE;
-}
-
-.select:disabled {
-  background: #F5F5F5;
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
-/* Location Info */
-.locationInfo {
-  background: #F0F7FF;
-  padding: 16px;
-  border-radius: 9.6px;
-  margin: 19.2px 0;
-  border-left: 3.2px solid #0173BE;
-}
-
-.locationInfo h3 {
-  font-size: 14.4px;
-  font-weight: 600;
-  margin-bottom: 9.6px;
-  color: #1a1a1a;
-}
-
-.locationInfo p {
-  margin: 3.2px 0;
-  color: #333;
-  font-size: 12px;
-}
-
-.hours {
-  margin-top: 9.6px;
-  padding-top: 9.6px;
-  border-top: 1px solid #D0E7F9;
-  font-weight: 600;
-  color: #0173BE;
-}
-
-.pickupLocationSub{
-    text-decoration: underline;
-}
-
-/* Button */
-.button {
-  width: 100%;
-  background-color: #222755;
-  color: white;
-  font-size: 14.4px;
-  font-weight: 600;
-  padding: 12.8px;
-  border: none;
-  border-radius: 9.6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: Figtree, sans-serif;
-  margin-top: 6.4px;
-}
-
-.button:hover:not(:disabled) {
-  background-color: #0173BE;
-  transform: translateY(-1.6px);
-  box-shadow: 0 3.2px 9.6px rgba(1, 115, 190, 0.3);
-}
-
-.button:disabled {
-  background-color: #CCC;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.buttonLink {
-  text-decoration: none;
-  display: inline-block;
-  width: 100%;
-}
-
-/* Confirmation */
-.successIcon {
-  font-size: 51.2px;
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.confirmationBox h1 {
-  color: #0173BE;
-}
-
-.bookingDetails {
-  background: #F0F7FF;
-  padding: 19.2px;
-  border-radius: 9.6px;
-  margin: 19.2px 0;
-}
-
-.bookingDetails h2 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 12.8px;
-  color: #1a1a1a;
-}
-
-.detailRow {
-  display: flex;
-  justify-content: space-between;
-  padding: 9.6px 0;
-  border-bottom: 1px solid #D0E7F9;
-}
-
-.detailRow:last-child {
-  border-bottom: none;
-}
-
-.label {
-  font-weight: 600;
-  color: #666;
-}
-
-.value {
-  text-align: right;
-  color: #1a1a1a;
-  font-weight: 500;
-}
-
-.reminderBox {
-  background: #E8F5E9;
-  padding: 16px;
-  border-radius: 9.6px;
-  margin: 19.2px 0;
-  border-left: 3.2px solid #4CAF50;
-}
-
-.reminderBox h3 {
-  font-size: 14.4px;
-  font-weight: 600;
-  margin-bottom: 6.4px;
-  color: #2E7D32;
-}
-
-.reminderBox p {
-  color: #333;
-  margin: 3.2px 0;
-}
-
-.note {
-  margin-top: 9.6px;
-  font-weight: 600;
-  color: #2E7D32;
-}
-
-/* Error Box */
-.errorBox {
-  text-align: center;
-}
-
-.errorBox h1 {
-  color: #FF4444;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
-  .verificationBox,
-  .bookingBox,
-  .confirmationBox,
-  .errorBox {
-    padding: 25.6px 19.2px;
-  }
-
-  .verificationBox h1,
-  .bookingBox h1,
-  .confirmationBox h1,
-  .errorBox h1 {
-    font-size: 19.2px;
-  }
-
-  .pickupSection h2 {
-    font-size: 16px;
-  }
-
-  .detailRow {
-    flex-direction: column;
-    gap: 3.2px;
-  }
-
-  .value {
-    text-align: left;
+  .orderConfirmed {
+    .overview {
+      flex-direction: column;
+      padding: 0 12px;
+    }
   }
 }
