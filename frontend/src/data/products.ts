@@ -205,21 +205,30 @@ export const products: Product[] = [
     thumbnail: '/merch_photos/patches/departmental_patches/biol.png',
     variations: [
       {
+        id: 'astr-patch',
+        name: 'Astronomy Patch',
+        price: 4,
+        inStock: false,
+        images: [
+          '/merch_photos/patches/departmental_patches/astr.png'
+        ]
+      },
+      {
+        id: 'bioc-patch',
+        name: 'Biochemistry Patch',
+        price: 4,
+        inStock: false,
+        images: [
+          '/merch_photos/patches/departmental_patches/bioc.png'
+        ]
+      },
+      {
         id: 'biol-patch',
         name: 'Biology Patch',
         price: 4,
         inStock: false,
         images: [
           '/merch_photos/patches/departmental_patches/biol.png'
-        ]
-      },
-      {
-        id: 'astr-patch',
-        name: 'Astronomy Patch',
-        price: 4,
-        inStock: false,
-        images: [
-          PLACEHOLDER_IMAGE
         ]
       },
       {
@@ -237,7 +246,7 @@ export const products: Product[] = [
         price: 4,
         inStock: false,
         images: [
-          '/merch_photos/patches/departmental_patches/CAPS.png'
+          '/merch_photos/patches/departmental_patches/caps.png'
         ]
       },
       {
@@ -246,16 +255,34 @@ export const products: Product[] = [
         price: 4,
         inStock: false,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/departmental_patches/chem.png'
         ]
       },
       {
-        id: 'cs-patch',
+        id: 'cogs-patch',
+        name: 'Cognitive Systems Patch',
+        price: 4,
+        inStock: false,
+        images: [
+          '/merch_photos/patches/departmental_patches/cogs.png'
+        ]
+      },
+      {
+        id: 'cpsc-patch',
         name: 'Computer Science Patch',
         price: 4,
         inStock: false,
         images: [
           '/merch_photos/patches/departmental_patches/cpsc.png'
+        ]
+      },
+      {
+        id: 'envr-patch',
+        name: 'Environmental Science Patch',
+        price: 4,
+        inStock: false,
+        images: [
+          '/merch_photos/patches/departmental_patches/envr.png'
         ]
       },
       {
@@ -268,12 +295,21 @@ export const products: Product[] = [
         ]
       },
       {
+        id: 'isci-patch',
+        name: 'Integrated Sciences Patch',
+        price: 4,
+        inStock: false,
+        images: [
+          '/merch_photos/patches/departmental_patches/isci.png'
+        ]
+      },
+      {
         id: 'math-patch',
         name: 'Math Patch',
         price: 4,
         inStock: false,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/departmental_patches/math.png'
         ]
       },
       {
@@ -291,7 +327,7 @@ export const products: Product[] = [
         price: 4,
         inStock: false,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/departmental_patches/nsci.png'
         ]
       },
       {
