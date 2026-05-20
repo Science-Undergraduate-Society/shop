@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Colors, Size, Product, Variation, ClothingVariation, AccessoryVariation } from '@/lib/types'
+import { isStorePaused } from '@/lib/storeStatus'
 import styles from './ProductDetails.module.css'
 
 export default function ProductDetails({
@@ -18,15 +19,21 @@ export default function ProductDetails({
   onSizeChange: (size: Size) => void
 }) {
   const [shake, setShake] = useState<boolean>(false)
+  const storePaused = isStorePaused()
 
   const name = product.displayName
   const price = variation.price.toFixed(2)
   const addToCartDisabled =
+    storePaused ||
     product.type === 'clothing' && (!variation || !size) ||
     product.type === 'accessory' && !(variation as AccessoryVariation).inStock
 
   function handleAddToCard() {
     if (addToCartDisabled) {
+      if (storePaused) {
+        return
+      }
+
       setShake(true)
       setTimeout(() => setShake(false), 500)
       return
@@ -108,9 +115,13 @@ export default function ProductDetails({
         className={`${styles.addToCart} ${addToCartDisabled ? styles.disabled : ''}`}
         onClick={handleAddToCard}
       >
-        {/* Add To Cart */}
-        Buy
+        {storePaused ? 'Temporarily Closed' : 'Buy'}
       </button>
+      {storePaused && (
+        <p className={styles.purchasePauseNotice}>
+          Purchases are unavailable right now while our merch store transitions for Summer 2026.
+        </p>
+      )}
     </div>
   )
 }
