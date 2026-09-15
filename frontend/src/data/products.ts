@@ -203,7 +203,7 @@ export const products: Product[] = [
     id: 'departmental-patches',
     name: 'Departmental Patches',
     displayName: 'Departmental Patches',
-    squareLink: '',
+    squareLink: 'https://square.link/u/nDzxFacg',
     type: 'accessory',
     thumbnail: '/merch_photos/patches/departmental_patches/biol.png',
     variations: [
@@ -348,7 +348,7 @@ export const products: Product[] = [
     id: 'novelty-patches',
     name: 'Novelty Patches',
     displayName: 'Novelty Patches',
-    squareLink: '',
+    squareLink: 'https://square.link/u/kp0V4g3M',
     type: 'accessory',
     thumbnail: '/merch_photos/patches/novelty_patches/cherry_blossom.png',
     variations: [
@@ -404,25 +404,6 @@ export const products: Product[] = [
         inStock: true,
         images: [
           PLACEHOLDER_IMAGE
-        ]
-      }
-    ]
-  },
-  {
-    id: 'earned-patches',
-    name: 'Earned Patches',
-    displayName: 'Earned Patches',
-    squareLink: '',
-    type: 'accessory',
-    thumbnail: '/merch_photos/patches/earned_patches/grad.png',
-    variations: [
-      {
-        id: 'grad-patch',
-        name: 'Grad Patch',
-        price: 3.00,
-        inStock: true,
-        images: [
-          '/merch_photos/patches/earned_patches/grad.png'
         ]
       }
     ]
