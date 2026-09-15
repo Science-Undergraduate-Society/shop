@@ -70,6 +70,7 @@ export const products: Product[] = [
         price: 65,
         images: [
           '/merch_photos/hoodies/blue-hoodie.jpg',
+          '/merch_photos/hoodies/blue-hoodie.png',
           '/merch_photos/hoodies/blue-hoodie-2.jpg',
           '/merch_photos/hoodies/blue-pink-hoodie.jpg'
         ],
