@@ -39,7 +39,8 @@ export default function OrderConfirmedPage() {
             </a>
 
             <p className={styles.helperText}>
-              You will be redirected to Calendly to select your preferred pickup time
+              You will be redirected to Calendly to select your preferred pickup time.<br/><br/>
+              If you have any questions or need to arrange an alternative pickup, please email <a href="mailto:vpcommunications@sus.ubc.ca" style={{textDecoration: 'underline'}}>vpcommunications@sus.ubc.ca</a>.
             </p>
 
             <div className={styles.reminderBox}>
