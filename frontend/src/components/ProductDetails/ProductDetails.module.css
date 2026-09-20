@@ -175,6 +175,14 @@
   }
 }
 
+.purchasePauseNotice {
+  margin-top: -16px;
+  max-width: 360px;
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+  color: #6B3E00;
+}
+
 .shake {
   color: red !important;
   border-color: red !important;

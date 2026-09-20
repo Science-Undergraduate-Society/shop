@@ -24,3 +24,19 @@
     text-decoration: underline;
     color: darkblue;
 }
+
+.transitionInfo {
+    font-family: Figtree, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6B3E00;
+    background-color: #FFF4E6;
+    padding: 16px;
+    border-left: 8px solid #CC7000;
+    max-width: 800px;
+}
+
+.transitionInfo a {
+    text-decoration: underline;
+    color: #8C2F00;
+}
