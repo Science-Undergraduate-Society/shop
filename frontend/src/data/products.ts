@@ -241,7 +241,7 @@ export const products: Product[] = [
         price: 4,
         inStock: true,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/departmental_patches/botany.png'
         ]
       },
       {
@@ -250,7 +250,7 @@ export const products: Product[] = [
         price: 4,
         inStock: true,
         images: [
-          '/merch_photos/patches/departmental_patches/caps.png'
+          '/merch_photos/patches/departmental_patches/CAPS.png'
         ]
       },
       {
@@ -322,7 +322,7 @@ export const products: Product[] = [
         price: 4,
         inStock: true,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/departmental_patches/micb.png'
         ]
       },
       {
@@ -395,7 +395,7 @@ export const products: Product[] = [
         price: 3,
         inStock: true,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/novelty_patches/bluestar.png'
         ]
       },
       {
@@ -404,7 +404,7 @@ export const products: Product[] = [
         price: 3,
         inStock: true,
         images: [
-          PLACEHOLDER_IMAGE
+          '/merch_photos/patches/novelty_patches/goldstar.png'
         ]
       }
     ]
