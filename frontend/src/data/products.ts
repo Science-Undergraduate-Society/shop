@@ -19,7 +19,7 @@ export const products: Product[] = [
           '/merch_photos/letterman/letterman3.JPG',
           '/merch_photos/letterman/letterman4.JPG'
         ],
-        sizes: { XS: true, S: true, M: false, L: true, XL: true }
+        sizes: { XS: true, S: true, M: false, L: true, XL: false }
       }
     ],
     new: true
@@ -37,7 +37,7 @@ export const products: Product[] = [
         images: [
           '/merch_photos/hoodies/black-hoodie.png'
         ],
-        sizes: { S: false, M: false, L: false, XL: true }
+        sizes: { S: false, M: false, L: false, XL: false }
       },
       {
         color: 'white',
@@ -45,7 +45,7 @@ export const products: Product[] = [
         images: [
           '/merch_photos/hoodies/white-hoodie.png'
         ],
-        sizes: { S: true, M: false, L: true, XL: true }
+        sizes: { S: false, M: false, L: false, XL: true }
       },
       {
         color: 'greyYellow',
@@ -54,7 +54,7 @@ export const products: Product[] = [
           '/merch_photos/hoodies/grey-hoodie.png',
           '/merch_photos/hoodies/hoodie-grey-spotlight.jpeg'
         ],
-        sizes: { S: true, M: false, L: false, XL: true }
+        sizes: { S: false, M: false, L: false, XL: true }
       },
       // {
       //   color: 'greyWhite',
@@ -74,7 +74,7 @@ export const products: Product[] = [
           '/merch_photos/hoodies/blue-hoodie-2.jpg',
           '/merch_photos/hoodies/blue-pink-hoodie.jpg'
         ],
-        sizes: { S: true, M: true, L: true, XL: true }
+        sizes: { S: true, M: false, L: true, XL: false }
       },
       // {
       //   color: 'sand',
@@ -91,7 +91,7 @@ export const products: Product[] = [
           '/merch_photos/hoodies/pink-hoodie.jpg',
           '/merch_photos/hoodies/blue-pink-hoodie.jpg'
         ],
-        sizes: { S: true, M: false, L: true, XL: false }
+        sizes: { S: false, M: false, L: false, XL: true }
       }
     ]
   },
@@ -108,7 +108,7 @@ export const products: Product[] = [
         images: [
           '/merch_photos/crewnecks/black-crew.png'
         ],
-        sizes: { S: false, M: false, L: false, XL: true }
+        sizes: { S: false, M: false, L: false, XL: false }
       },
       {
         color: 'white',
@@ -116,7 +116,7 @@ export const products: Product[] = [
         images: [
           '/merch_photos/crewnecks/white-crew.jpg'
         ],
-        sizes: { S: false, M: false, L: false, XL: true }
+        sizes: { S: false, M: false, L: true, XL: true }
       },
       {
         color: 'greyYellow',
@@ -124,7 +124,7 @@ export const products: Product[] = [
         images: [
           '/merch_photos/crewnecks/grey-crew.png'
         ],
-        sizes: { S: false, M: true, L: false, XL: true }
+        sizes: { S: false, M: false, L: true, XL: true }
       },
       // {
       //   color: 'greyWhite',
@@ -148,7 +148,7 @@ export const products: Product[] = [
         images: [
           '/merch_photos/crewnecks/sand-crew.png'
         ],
-        sizes: { S: false, M: false, L: false, XL: true }
+        sizes: { S: false, M: false, L: false, XL: false }
       },
       {
         color: 'pink',
@@ -157,7 +157,7 @@ export const products: Product[] = [
           '/merch_photos/crewnecks/pink-crew.jpg',
           '/merch_photos/crewnecks/pink-crew-2.jpg'
         ],
-        sizes: { S: true, M: true, L: true, XL: true }
+        sizes: { S: false, M: false, L: false, XL: false }
       }
     ]
   },
@@ -271,15 +271,15 @@ export const products: Product[] = [
           '/merch_photos/patches/departmental_patches/cogs.png'
         ]
       },
-      // {
-      //   id: 'cpsc-patch',
-      //   name: 'Computer Science Patch',
-      //   price: 4,
-      //   inStock: false,
-      //   images: [
-      //     '/merch_photos/patches/departmental_patches/cpsc.png'
-      //   ]
-      // },
+      {
+        id: 'cpsc-patch',
+        name: 'Computer Science Patch',
+        price: 4,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/departmental_patches/cpsc.png'
+        ]
+      },
       {
         id: 'envr-patch',
         name: 'Environmental Science Patch',
@@ -362,15 +362,15 @@ export const products: Product[] = [
       //     '/merch_photos/patches/novelty_patches/cherry_blossom.png'
       //   ]
       // },
-      // {
-      //   id: 'coffee-patch',
-      //   name: 'Coffee Patch',
-      //   price: 3.50,
-      //   inStock: false,
-      //   images: [
-      //     '/merch_photos/patches/novelty_patches/coffee.png'
-      //   ]
-      // },
+      {
+        id: 'coffee-patch',
+        name: 'Coffee Patch',
+        price: 3.50,
+        inStock: true,
+        images: [
+          '/merch_photos/patches/novelty_patches/coffee.png'
+        ]
+      },
       // {
       //   id: 'mountain-patch',
       //   name: 'Mountain Patch',
