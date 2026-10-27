@@ -4,6 +4,47 @@ const PLACEHOLDER_IMAGE = '/background-stem.svg'
 
 export const products: Product[] = [
   {
+    id: 'sus-hoodie',
+    name: 'SUS Hoodie',
+    displayName: 'SUS Hoodie',
+    squareLink: 'https://square.link/u/EZliYdhW',
+    type: 'clothing',
+    variations: [
+      {
+        color: 'darkBlue',
+        price: 65,
+        images: [
+          '/merch_photos/sus_hoodie/sus-hoodie-1.jpg',
+          '/merch_photos/sus_hoodie/sus-hoodie-2.jpg',
+          '/merch_photos/sus_hoodie/sus-hoodie-3.jpg',
+          '/merch_photos/sus_hoodie/sus-hoodie-4.jpg'
+        ],
+        sizes: { S: true, M: true, L: true, XL: true }
+      }
+    ],
+    new: true
+  },
+  {
+    id: 'sus-tshirt',
+    name: 'SUS Tshirt',
+    displayName: 'SUS Tshirt',
+    squareLink: 'https://square.link/u/J1r9Hr9a',
+    type: 'clothing',
+    variations: [
+      {
+        color: 'darkBlue',
+        price: 35,
+        images: [
+          '/merch_photos/sus_tshirt/sus-tshirt-1.jpg',
+          '/merch_photos/sus_tshirt/sus-tshirt-2.jpg',
+          '/merch_photos/sus_tshirt/sus-tshirt-3.jpg'
+        ],
+        sizes: { S: true, M: true, L: true, XL: true }
+      }
+    ],
+    new: true
+  },
+  {
     id: 'letterman',
     name: 'Letterman Jacket',
     displayName: 'Our Brand New Letterman Jackets!',
@@ -21,8 +62,7 @@ export const products: Product[] = [
         ],
         sizes: { XS: true, S: true, M: false, L: true, XL: true }
       }
-    ],
-    new: true
+    ]
   },
   {
     id: 'hoodies',
